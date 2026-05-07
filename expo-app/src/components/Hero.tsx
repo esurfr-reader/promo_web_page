@@ -4,11 +4,12 @@ import Eyebrow from "./Eyebrow";
 import Display from "./Display";
 import Wrap from "./Wrap";
 import { colors, fonts } from "../styles/theme";
-import { images } from "../content/images";
+import { useLocalizedImages } from "../content/images";
 
 export default function Hero() {
   const { t } = useTranslation("hero");
   const { width } = useWindowDimensions();
+  const images = useLocalizedImages();
   const isWide = width >= 980;
   const meta = t("meta", { returnObjects: true }) as {
     languages: string;

@@ -2,10 +2,11 @@ import { View, Text, Image, Pressable, Linking } from "react-native";
 import { useTranslation } from "react-i18next";
 import Wrap from "./Wrap";
 import { colors, fonts } from "../styles/theme";
-import { images } from "../content/images";
+import { useLocalizedImages } from "../content/images";
 
 export default function Footer() {
   const { t } = useTranslation("common");
+  const images = useLocalizedImages();
 
   return (
     <View style={{ backgroundColor: colors.navy, borderTopColor: "rgba(255,255,255,.08)", borderTopWidth: 1, paddingVertical: 26 }}>

@@ -1,7 +1,7 @@
 import { View, Text, Image, Pressable, Linking } from "react-native";
 import { useTranslation } from "react-i18next";
 import { colors, fonts, layout } from "../styles/theme";
-import { images } from "../content/images";
+import { useLocalizedImages } from "../content/images";
 
 const NAV_HEIGHT = 64;
 
@@ -24,6 +24,7 @@ function NavLink({ label, href }: { label: string; href: string }) {
 
 export default function Nav() {
   const { t } = useTranslation("common");
+  const images = useLocalizedImages();
   return (
     <View
       style={{

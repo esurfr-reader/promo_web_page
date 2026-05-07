@@ -5,11 +5,12 @@ import Wrap from "./Wrap";
 import Eyebrow from "./Eyebrow";
 import Display from "./Display";
 import { colors, fonts } from "../styles/theme";
-import { breakOrder, images } from "../content/images";
+import { breakOrder, useLocalizedImages } from "../content/images";
 
 export default function Canvas() {
   const { t } = useTranslation("canvas");
   const labels = t("breakLabels", { returnObjects: true }) as string[];
+  const images = useLocalizedImages();
   const { width } = useWindowDimensions();
   const cols = width >= 980 ? 4 : width >= 540 ? 2 : 1;
   const gap = 24;
