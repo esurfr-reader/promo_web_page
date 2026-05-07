@@ -32,8 +32,8 @@ export const images = {
 
 export const breakOrder = [
   "openBeach",
-  "rightPoint",
   "leftPoint",
+  "rightPoint",
   "beachReef",
   "outerReef",
   "rivermouth",
