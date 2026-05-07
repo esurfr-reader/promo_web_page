@@ -1,0 +1,16 @@
+{
+  "eyebrow": "The Surf Reader Method",
+  "title": "Forty years of coaching, distilled into one loop.",
+  "quote": "The surfers who improve fastest aren't the most talented. They're the ones who plan a session, surf the plan, and tell themselves the truth about how it went.",
+  "author": {
+    "initials": "MD",
+    "name": "Martin Dunn",
+    "role": "Pioneer of professional surf coaching · Founder, eSurfR.com"
+  },
+  "stats": [
+    { "value": "40+", "label": "Years coaching surfers from grom to world tour." },
+    { "value": "8", "label": "Break types Surf Reader knows how to map." },
+    { "value": "7", "label": "Self-assessment criteria, calibrated for honest rating." },
+    { "value": "5", "label": "Languages at launch — surf coaching, your tongue." }
+  ]
+}
