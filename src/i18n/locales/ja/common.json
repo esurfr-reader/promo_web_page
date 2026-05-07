@@ -1,14 +1,14 @@
 {
   "brand": "Surf Reader",
   "nav": {
-    "how": "How it works",
-    "canvas": "Beach Maps",
-    "review": "Review",
-    "method": "The Method",
-    "cta": "Get the app"
+    "how": "使い方",
+    "canvas": "ビーチマップ",
+    "review": "レビュー",
+    "method": "メソッド",
+    "cta": "アプリを入手"
   },
   "languageSwitcher": {
-    "label": "Language",
+    "label": "言語",
     "en": "English",
     "es": "Español",
     "pt": "Português",
@@ -16,7 +16,7 @@
     "fr": "Français"
   },
   "languages": {
-    "title": "Surf, in your language",
+    "title": "あなたの言語で、サーフを。",
     "items": [
       { "name": "English", "code": "EN" },
       { "name": "Español", "code": "ES" },
@@ -29,8 +29,8 @@
     "copyright": "© 2026 Martin Dunn",
     "links": {
       "esurfr": "eSurfR.com",
-      "privacy": "Privacy",
-      "support": "Support"
+      "privacy": "プライバシー",
+      "support": "サポート"
     }
   }
 }

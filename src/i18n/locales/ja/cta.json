@@ -1,11 +1,11 @@
 {
-  "title": "Plan the surf you <em>want</em>.<br/>Then surf it.",
-  "lede": "Surf Reader is free to download, free to use, and built by surfers, for surfers — wherever you paddle out.",
+  "title": "<em>思い描いた</em>サーフをプランニング。<br/>そして、波に乗る。",
+  "lede": "Surf Readerはダウンロード無料、利用無料。サーファーによる、サーファーのためのアプリです — どこで波に出ようとも。",
   "stores": {
-    "appStoreSmall": "Download on the",
+    "appStoreSmall": "ダウンロードはこちら",
     "appStoreBig": "App Store",
-    "playStoreSmall": "Get it on",
+    "playStoreSmall": "入手はこちら",
     "playStoreBig": "Google Play"
   },
-  "footnote": "No account required · Works fully offline · Your sessions stay on your device."
+  "footnote": "アカウント不要 · 完全オフライン対応 · セッションデータは端末内に保存。"
 }

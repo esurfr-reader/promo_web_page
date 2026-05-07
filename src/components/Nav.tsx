@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { images } from "../content/images";
-import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Nav() {
   const { t } = useTranslation("common");
@@ -16,7 +15,6 @@ export default function Nav() {
           <a href="#canvas">{t("nav.canvas")}</a>
           <a href="#review">{t("nav.review")}</a>
           <a href="#method">{t("nav.method")}</a>
-          <LanguageSwitcher />
           <a className="keep" href="#download">
             <button className="nav-cta">{t("nav.cta")}</button>
           </a>

@@ -1,15 +1,15 @@
 {
-  "eyebrow": "The beach map canvas",
-  "title": "Eight break types. Your hand. One tap to plan.",
-  "lede": "The canvas is the heart of Surf Reader — a touch-first, glove-friendly drawing surface designed for wet fingers and bright sunlight. Try it.",
+  "eyebrow": "ビーチマップ・キャンバス",
+  "title": "8種類のブレイク。あなたの手で。タップひとつでプランニング。",
+  "lede": "キャンバスはSurf Readerの心臓部 — 濡れた指やグローブをはめた手、まぶしい日差しの下でも使える、タッチ操作優先の描画画面です。実際に試してみてください。",
   "breakLabels": [
-    "Open Beach",
-    "Right Point",
-    "Left Point",
-    "Beach Reef",
-    "Outer Reef",
-    "Rivermouth",
-    "Beach Pier",
-    "Breakwall"
+    "オープンビーチ",
+    "ライトポイント",
+    "レフトポイント",
+    "ビーチリーフ",
+    "アウターリーフ",
+    "リバーマウス",
+    "ビーチピア",
+    "ブレイクウォール"
   ]
 }

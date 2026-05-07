@@ -1,22 +1,22 @@
 {
-  "eyebrow": "The 3-step loop",
-  "title": "Map. Plan. Review. Repeat.",
-  "lede": "One simple loop, repeated every session. The same one Martin teaches at his surf camps — now in your pocket.",
+  "eyebrow": "3ステップのループ",
+  "title": "マップ。プラン。レビュー。繰り返す。",
+  "lede": "シンプルなループを、毎セッション繰り返すだけ。Martinがサーフキャンプで教えているのと同じ手法を、ポケットの中に。",
   "steps": [
     {
-      "step": "Map the break",
-      "title": "Annotate the lineup with your finger.",
-      "body": "Pick from 8 break types — open beach, point, reef, rivermouth, breakwall and more. Drop your \"Me\" pin, draw the wave direction, mark the rip, place landmarks. Auto-saved as you draw."
+      "step": "ブレイクをマッピング",
+      "title": "指でラインアップに書き込み。",
+      "body": "8種類のブレイク — オープンビーチ、ポイント、リーフ、リバーマウス、ブレイクウォールなど — から選択。「自分」ピンを置き、波の方向を描き、リップをマークし、ランドマークを配置。描きながら自動保存。"
     },
     {
-      "step": "Set your intention",
-      "title": "Guided plan in seven questions.",
-      "body": "Where will you sit? How will you paddle out? What's your goal wave count? Surf Reader walks you through Martin's 7-question coaching flow and writes a clean session plan you can save and revisit."
+      "step": "意図を設定",
+      "title": "7つの質問でプランをガイド。",
+      "body": "どこに座る?どうやってパドルアウトする?目標の本数は?Surf ReaderがMartinの7問コーチングフローに沿って案内し、保存して見返せるきれいなセッションプランを書き出します。"
     },
     {
-      "step": "Rate your surf",
-      "title": "Seven criteria. Five stars each.",
-      "body": "From paddle-out to wave selection to bottom-turn execution — score yourself honestly. The app calculates your Skill Rating, charts your progression, and pulls up your map next session so you can pick up exactly where you left off."
+      "step": "サーフを評価",
+      "title": "7つの基準。各5つ星。",
+      "body": "パドルアウトから波選び、ボトムターンの実行まで — 自分自身を正直に採点。アプリがスキルレーティングを算出、上達曲線を描き、次回はマップを呼び出して、前回の続きから始められます。"
     }
   ]
 }

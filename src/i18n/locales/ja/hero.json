@@ -1,23 +1,23 @@
 {
-  "eyebrow": "A surfer's planner & journal",
+  "eyebrow": "サーファーのためのプランナー&ジャーナル",
   "title": {
-    "line1Prefix": "Read the ",
-    "line1Highlight": "surf",
-    "line1Suffix": ".",
-    "line2": "Plan your session.",
-    "line3": "Reflect after."
+    "line1Prefix": "波を",
+    "line1Highlight": "読む",
+    "line1Suffix": "。",
+    "line2": "セッションをプランする。",
+    "line3": "そしてふり返る。"
   },
-  "lede": "Surf Reader is a pocket-sized coaching companion built around Martin Dunn's 40-year surf-coaching method. Map the break, set your intention, then rate the surf you actually had — and watch your skill chart rise wave by wave.",
-  "primaryCta": "Get Surf Reader",
-  "secondaryCta": "See how it works",
+  "lede": "Surf Readerは、Martin Dunnが40年磨き上げたサーフコーチング・メソッドを軸にした、ポケットサイズのコーチングコンパニオン。ブレイクをマッピングし、意図を定め、実際に乗ったサーフを評価する — 一本ごとにスキルチャートが伸びていきます。",
+  "primaryCta": "Surf Readerを入手",
+  "secondaryCta": "使い方を見る",
   "meta": {
-    "languages": "<b>5 languages</b> · EN · ES · PT · JA · FR",
-    "breakTypes": "<b>8 break types</b> mapped",
+    "languages": "<b>5言語対応</b> · EN · ES · PT · JA · FR",
+    "breakTypes": "<b>8種類のブレイク</b>をマップ化",
     "platforms": "iOS & Android"
   },
   "logoStrip": {
-    "label": "Built on Martin Dunn's coaching from",
+    "label": "Martin Dunnのコーチングをベースに構築",
     "items": ["eSurfR.com", "MartinDunn.com.au", "Martin Dunn Surf Camps"]
   },
-  "phoneAlt": "Surf Reader app home screen"
+  "phoneAlt": "Surf Readerアプリのホーム画面"
 }

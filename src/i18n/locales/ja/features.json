@@ -1,31 +1,31 @@
 {
-  "eyebrow": "Built for the beach",
-  "title": "Designed for wet fingers, bright sun and zero patience.",
-  "lede": "Every detail tuned for the parking-lot moment between unzipping your boardbag and paddling out.",
+  "eyebrow": "ビーチで使うために設計",
+  "title": "濡れた指、まぶしい太陽、そして待ってられない時のために。",
+  "lede": "ボードバッグを開けてからパドルアウトするまでの、駐車場での一瞬のために、すべてのディテールを最適化。",
   "items": [
     {
-      "title": "Skill Rating chart",
-      "body": "Your last surf and your overall trend, on the home screen. The chart that motivates the paddle out tomorrow."
+      "title": "スキルレーティング・チャート",
+      "body": "前回のサーフと全体のトレンドをホーム画面に表示。明日のパドルアウトへのモチベーションになるチャート。"
     },
     {
-      "title": "Session library",
-      "body": "Every session saved by beach name and date. Tap any past surf to read your plan, see the map and the stars."
+      "title": "セッションライブラリ",
+      "body": "すべてのセッションをビーチ名と日付で保存。過去のサーフをタップすれば、プラン、マップ、星評価をいつでも確認できます。"
     },
     {
-      "title": "Set Timer",
-      "body": "Tap as four sets roll in — Surf Reader gives you the average interval so you can be in position when the next one arrives."
+      "title": "セットタイマー",
+      "body": "4つのセットが入るタイミングでタップするだけ — Surf Readerが平均インターバルを算出し、次の波が来る位置取りに役立てます。"
     },
     {
-      "title": "Two planning modes",
-      "body": "Guided 7-question flow when you want coaching, or freeform \"I will…\" notes when you already know the wave."
+      "title": "2つのプランニングモード",
+      "body": "コーチングが欲しい時はガイド付き7問フロー、波を熟知している時はフリーフォームの「I will…」メモ。"
     },
     {
-      "title": "Coaching whispers",
-      "body": "Subtle prompts, never lectures. The app teaches the loop on day one and disappears by day three — out of your way."
+      "title": "コーチングのささやき",
+      "body": "さりげない促し、決して説教ではありません。初日にループを教え、3日目には消えてくれる — 邪魔にならない設計。"
     },
     {
-      "title": "Offline-first",
-      "body": "No reception in the dunes? Surf Reader doesn't care. Everything stored on-device. Your plans go with you, not to a cloud."
+      "title": "オフラインファースト",
+      "body": "砂丘で電波が入らない?Surf Readerには関係ありません。すべて端末内に保存。プランはあなたと一緒に、クラウドではなく。"
     }
   ]
 }
