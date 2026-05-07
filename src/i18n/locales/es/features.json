@@ -1,0 +1,31 @@
+{
+  "eyebrow": "Built for the beach",
+  "title": "Designed for wet fingers, bright sun and zero patience.",
+  "lede": "Every detail tuned for the parking-lot moment between unzipping your boardbag and paddling out.",
+  "items": [
+    {
+      "title": "Skill Rating chart",
+      "body": "Your last surf and your overall trend, on the home screen. The chart that motivates the paddle out tomorrow."
+    },
+    {
+      "title": "Session library",
+      "body": "Every session saved by beach name and date. Tap any past surf to read your plan, see the map and the stars."
+    },
+    {
+      "title": "Set Timer",
+      "body": "Tap as four sets roll in — Surf Reader gives you the average interval so you can be in position when the next one arrives."
+    },
+    {
+      "title": "Two planning modes",
+      "body": "Guided 7-question flow when you want coaching, or freeform \"I will…\" notes when you already know the wave."
+    },
+    {
+      "title": "Coaching whispers",
+      "body": "Subtle prompts, never lectures. The app teaches the loop on day one and disappears by day three — out of your way."
+    },
+    {
+      "title": "Offline-first",
+      "body": "No reception in the dunes? Surf Reader doesn't care. Everything stored on-device. Your plans go with you, not to a cloud."
+    }
+  ]
+}

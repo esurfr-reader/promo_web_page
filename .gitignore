@@ -1,3 +1,10 @@
 .repomix-output.xml
 .claude/repomix/
 .env
+.env.*
+!.env.example
+node_modules
+dist
+.DS_Store
+*.log
+.vite

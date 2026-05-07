@@ -1,0 +1,36 @@
+{
+  "brand": "Surf Reader",
+  "nav": {
+    "how": "How it works",
+    "canvas": "Beach Maps",
+    "review": "Review",
+    "method": "The Method",
+    "cta": "Get the app"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "ja": "日本語",
+    "fr": "Français"
+  },
+  "languages": {
+    "title": "Surf, in your language",
+    "items": [
+      { "name": "English", "code": "EN" },
+      { "name": "Español", "code": "ES" },
+      { "name": "Português", "code": "PT" },
+      { "name": "日本語", "code": "JA" },
+      { "name": "Français", "code": "FR" }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 Martin Dunn",
+    "links": {
+      "esurfr": "eSurfR.com",
+      "privacy": "Privacy",
+      "support": "Support"
+    }
+  }
+}

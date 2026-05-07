@@ -1,0 +1,23 @@
+{
+  "eyebrow": "A surfer's planner & journal",
+  "title": {
+    "line1Prefix": "Read the ",
+    "line1Highlight": "surf",
+    "line1Suffix": ".",
+    "line2": "Plan your session.",
+    "line3": "Reflect after."
+  },
+  "lede": "Surf Reader is a pocket-sized coaching companion built around Martin Dunn's 40-year surf-coaching method. Map the break, set your intention, then rate the surf you actually had — and watch your skill chart rise wave by wave.",
+  "primaryCta": "Get Surf Reader",
+  "secondaryCta": "See how it works",
+  "meta": {
+    "languages": "<b>5 languages</b> · EN · ES · PT · JA · FR",
+    "breakTypes": "<b>8 break types</b> mapped",
+    "platforms": "iOS & Android"
+  },
+  "logoStrip": {
+    "label": "Built on Martin Dunn's coaching from",
+    "items": ["eSurfR.com", "MartinDunn.com.au", "Martin Dunn Surf Camps"]
+  },
+  "phoneAlt": "Surf Reader app home screen"
+}
