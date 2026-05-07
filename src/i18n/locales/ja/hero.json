@@ -1,23 +1,23 @@
 {
-  "eyebrow": "サーファーのためのプランナー&ジャーナル",
+  "eyebrow": "サーファーのための計画帳・記録帳",
   "title": {
     "line1Prefix": "波を",
     "line1Highlight": "読む",
     "line1Suffix": "。",
-    "line2": "セッションをプランする。",
-    "line3": "そしてふり返る。"
+    "line2": "セッションを計画する。",
+    "line3": "終わったら振り返る。"
   },
-  "lede": "Surf Readerは、Martin Dunnが40年磨き上げたサーフコーチング・メソッドを軸にした、ポケットサイズのコーチングコンパニオン。ブレイクをマッピングし、意図を定め、実際に乗ったサーフを評価する — 一本ごとにスキルチャートが伸びていきます。",
-  "primaryCta": "Surf Readerを入手",
+  "lede": "サーフリーダーは、マーティン・ダンの40年に及ぶサーフコーチング・メソッドをポケットに収めたコーチング・コンパニオン。ブレイクをマッピングし、意図を定め、実際にできたサーフを評価する。波ごとにあなたのスキルチャートが伸びていきます。",
+  "primaryCta": "サーフリーダーを入手",
   "secondaryCta": "使い方を見る",
   "meta": {
     "languages": "<b>5言語対応</b> · EN · ES · PT · JA · FR",
-    "breakTypes": "<b>8種類のブレイク</b>をマップ化",
+    "breakTypes": "<b>8種類のブレイク</b>に対応",
     "platforms": "iOS & Android"
   },
   "logoStrip": {
-    "label": "Martin Dunnのコーチングをベースに構築",
+    "label": "マーティン・ダンのコーチングをベースに",
     "items": ["eSurfR.com", "MartinDunn.com.au", "Martin Dunn Surf Camps"]
   },
-  "phoneAlt": "Surf Readerアプリのホーム画面"
+  "phoneAlt": "サーフリーダー アプリのホーム画面"
 }

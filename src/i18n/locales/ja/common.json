@@ -1,5 +1,5 @@
 {
-  "brand": "Surf Reader",
+  "brand": "サーフリーダー",
   "nav": {
     "how": "使い方",
     "canvas": "ビーチマップ",
@@ -16,7 +16,7 @@
     "fr": "Français"
   },
   "languages": {
-    "title": "あなたの言語で、サーフを。",
+    "title": "あなたの言語でサーフィンを",
     "items": [
       { "name": "English", "code": "EN" },
       { "name": "Español", "code": "ES" },
@@ -26,7 +26,7 @@
     ]
   },
   "footer": {
-    "copyright": "© 2026 Martin Dunn",
+    "copyright": "© 2026 マーティン・ダン",
     "links": {
       "esurfr": "eSurfR.com",
       "privacy": "プライバシー",

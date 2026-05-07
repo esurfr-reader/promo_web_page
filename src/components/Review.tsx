@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import ReviewDemo from "./ReviewDemo";
 
 export default function Review() {
   const { t } = useTranslation("review");
@@ -30,7 +31,9 @@ export default function Review() {
             </ul>
           </div>
 
-          <div id="reviewDemo"></div>
+          <div id="reviewDemo">
+            <ReviewDemo />
+          </div>
         </div>
       </div>
     </section>

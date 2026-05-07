@@ -16,6 +16,18 @@ export const images = {
     beachPier: "/assets/812e2014-f159-4f8e-82cd-b61d7420b57f.png",
     breakwall: "/assets/8bfb1224-ec2b-4341-9f91-3d1626fbb6c4.png",
   },
+  // Used by the canvas + flow-card visuals
+  canvasIcons: {
+    me: "/assets/ba1b6696-1f83-4937-870c-88a7b8075f3d.png",
+    house: "/assets/eca496b6-9507-4ffa-afb5-6e8b9343da1a.png",
+    tree: "/assets/b18e82f5-02c0-4bfa-8676-e5f624223169.png",
+    rocks: "/assets/e0ab7e8d-e0f8-4fbd-947f-f470a06eb1f9.png",
+    lifesaverTower: "/assets/a721feee-b809-4e98-9340-94a8d917220a.png",
+    lifesaverFlag: "/assets/746b7544-dd35-461e-962d-1b7dbbb7098a.png",
+    walkingTrack: "/assets/5860a053-e0a8-4803-8491-0919dec8be69.png",
+    carpark: "/assets/c4e98389-9af0-4f96-b45f-11e9b0d736f2.png",
+    building: "/assets/86004d86-b69e-4511-bd2f-53b312f6f7aa.png",
+  },
 } as const;
 
 export const breakOrder = [

@@ -1,3 +1,4 @@
+import LanguageSwitcher from "./components/LanguageSwitcher";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Problem from "./components/Problem";
@@ -13,6 +14,7 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
+      <LanguageSwitcher />
       <Nav />
       <Hero />
       <Problem />

@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { breakOrder, images } from "../content/images";
+import CanvasDemo from "./CanvasDemo";
 
 export default function Canvas() {
   const { t } = useTranslation("canvas");
@@ -14,7 +15,9 @@ export default function Canvas() {
           <p>{t("lede")}</p>
         </div>
 
-        <div id="canvasDemo"></div>
+        <div id="canvasDemo">
+          <CanvasDemo />
+        </div>
 
         <div className="break-row" style={{ marginTop: 60 }}>
           {breakOrder.map((key, i) => (
