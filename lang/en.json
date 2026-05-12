@@ -1,0 +1,210 @@
+{
+  "_meta": {
+    "lang": "en",
+    "name": "English",
+    "code": "EN",
+    "status": "source"
+  },
+  "doc": {
+    "title": "Surf Reader — Read the surf. Plan your session. Reflect after.",
+    "html_lang": "en"
+  },
+  "nav": {
+    "how_it_works": "How it works",
+    "beach_maps": "Beach Maps",
+    "review": "Review",
+    "method": "The Method",
+    "cta": "Get the app"
+  },
+  "hero": {
+    "eyebrow": "A surfer's planner & journal",
+    "h1_html": "Read the <span class=\"swell\">surf</span>.<br/>Plan your session.<br/>Reflect after.",
+    "lede": "Surf Reader is a pocket-sized coaching companion built around Martin Dunn's 40-year surf-coaching method. Map the break, set your intention before paddling out, then rate the surf you actually had — and watch your wave selection expertise grow session by session.",
+    "cta_primary": "Get Surf Reader",
+    "cta_secondary": "See how it works",
+    "meta_lead": "Use the app and learn better wave selection in 5 languages",
+    "lang_strip": ["English", "Español", "Português", "日本語", "Français"]
+  },
+  "trust": {
+    "label": "Built on Martin Dunn's coaching from",
+    "brands": ["eSurfR.com", "MartinDunn.com.au", "Martin Dunn Surf Camps"]
+  },
+  "problem": {
+    "eyebrow": "Why surfers plateau?",
+    "h2": "Most sessions vanish the moment your wetsuit comes off.",
+    "lede": "You paddle out, you surf, you drive home. No record of where you sat, what you read in the swell, or what you actually did differently. Surf Reader closes that loop — quickly, on the beach, in the language you think in.",
+    "cards": [
+      {
+        "num": "01",
+        "title": "You read the lineup, then forget what you saw.",
+        "body": "Sand banks shift, rips appear, peaks drift. Surf Reader turns your eyes-on-the-water into a saved beach map you can pull up before paddling out."
+      },
+      {
+        "num": "02",
+        "title": "You surf without an intention.",
+        "body": "\"Just have fun\" is a great mantra and a poor session plan. The guided 7-question flow gives you one specific thing to work on this surf."
+      },
+      {
+        "num": "03",
+        "title": "You never honestly rate yourself.",
+        "body_html": "Seven criteria, one to ten stars. The average becomes your <b>skill rating</b>. Trends emerge. Excuses don't."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "The 3-step loop",
+    "h2": "Map. Plan. Review. Repeat.",
+    "lede": "One simple loop, repeated anytime you want. The same one Martin teaches at his surf camps — now in your pocket.",
+    "cards": [
+      {
+        "step": "Map the break",
+        "title": "Annotate the lineup with your finger.",
+        "body": "Pick from 8 break types — open beach, point, reef, rivermouth, breakwall and more. Drop your \"Surfer\" pin, draw the wave direction, mark the rip, place landmarks. Auto-saved as you draw."
+      },
+      {
+        "step": "Set your intention",
+        "title": "Guided plan in seven questions.",
+        "body": "Where will you sit? How will you paddle out? Surf Reader walks you through Martin's 7-question coaching flow and writes a clean session plan you can save and revisit."
+      },
+      {
+        "step": "Rate your surf",
+        "title": "Seven criteria, rated out of 10.",
+        "body": "From paddle-out to wave selection to positioning — score yourself honestly. The app calculates your skill rating and charts your progression, creating a session library in the process."
+      }
+    ]
+  },
+  "canvas": {
+    "eyebrow": "The beach map canvas",
+    "h2": "Eight break types. Your hand. One tap to plan.",
+    "lede": "The canvas is the heart of Surf Reader — a touch-first, glove-friendly drawing surface designed for wet fingers and bright sunlight. Try it.",
+    "breaks": [
+      { "id": "open", "label": "Open Beach" },
+      { "id": "right_hand", "label": "Right Point" },
+      { "id": "left_hand", "label": "Left Point" },
+      { "id": "reef", "label": "Beach Reef" },
+      { "id": "outer_reef", "label": "Outer Reef" },
+      { "id": "rivermouth", "label": "Rivermouth" },
+      { "id": "pier", "label": "Beach Pier" },
+      { "id": "jetty", "label": "Breakwall" }
+    ],
+    "demo": {
+      "session_title": "Whale Beach",
+      "icons_count": "{n} icons · {m} strokes",
+      "mode_icons": "Icons",
+      "mode_draw": "Draw",
+      "mode_tools": "Tools",
+      "draw_wave": "Wave",
+      "draw_rip": "Rip",
+      "draw_freehand": "Freehand",
+      "undo": "Undo",
+      "clear": "Clear all",
+      "plan": "Plan →",
+      "hint_start": "Tap an icon, then tap the canvas to place it.",
+      "hint_place": "Now tap the canvas to place: {label}",
+      "hint_drawn": "Nice — try drawing the wave next.",
+      "hint_drag": "Drag on the canvas to draw {tool}.",
+      "hint_done": "Looking good. Switch to \"Tools\" to clear or move on.",
+      "hint_cleared": "Cleared. Tap an icon to start placing.",
+      "icon_labels": {
+        "me": "Surfer",
+        "house": "House",
+        "tree": "Tree",
+        "rocks": "Rocks",
+        "tower": "Lifesaver tower",
+        "flag": "Flag",
+        "track": "Walking track",
+        "park": "Car park",
+        "building": "Building"
+      },
+      "break_short": {
+        "right_hand": "Right",
+        "open": "Open",
+        "reef": "Reef",
+        "rivermouth": "River"
+      }
+    }
+  },
+  "features": {
+    "eyebrow": "Built for the beach",
+    "h2": "Designed for wet fingers, bright sun and zero patience.",
+    "lede": "Every detail tuned for the parking-lot moment between unzipping your boardbag and paddling out.",
+    "items": [
+      { "title": "Skill Rating chart", "body": "Your last surf and your overall trend, on the home screen. The chart that motivates the paddle out tomorrow." },
+      { "title": "Session library", "body": "Every session saved by beach name and date. Tap any past surf to read your plan, see the map and the stars." },
+      { "title": "Set Timer", "body": "Tap as four sets roll in — Surf Reader gives you the average interval so you can be in position when the next one arrives." },
+      { "title": "Two planning modes", "body": "Guided 7-question flow when you want coaching, or freeform \"I will…\" notes when you already know the wave." },
+      { "title": "Coaching whispers", "body": "Subtle prompts, never lectures. The app teaches the loop on day one and disappears by day three — out of your way." },
+      { "title": "Offline-first", "body": "No reception in the dunes? Surf Reader doesn't care. Everything stored on-device. Your plans go with you, not to a cloud." }
+    ]
+  },
+  "review": {
+    "eyebrow": "The post-surf review",
+    "h2": "Honest stars beat hopeful memory.",
+    "lede": "Walk back up the beach, sit on the sand, and rate seven things while the surf is still in your shoulders. Surf Reader does the maths — you just do the surf.",
+    "bullets": [
+      "7 self-assessment criteria, one tap each",
+      "Auto-averaged into a single Skill Rating (out of 10)",
+      "Comments field for that one detail you'll want next time"
+    ],
+    "demo": {
+      "session_title": "Whale Beach — Right-hand point",
+      "session_meta": "3 May 2026 · 1.2m clean · 6:40am session · Plan: \"Earlier paddle, later drop.\"",
+      "criteria": [
+        "Paddle out",
+        "Wave selection",
+        "Take-off timing",
+        "Bottom turn",
+        "Surf execution",
+        "Wave count",
+        "Energy & focus"
+      ],
+      "skill_rating": "Skill Rating",
+      "tip": "Tip: tap a star to update — totals recompute live."
+    }
+  },
+  "method": {
+    "eyebrow": "The Surf Reader Method",
+    "h2": "Forty years of coaching, distilled into one loop.",
+    "quote": "The surfers who improve fastest aren't the most talented. They're the ones who plan a session, surf the plan, and tell themselves the truth about how it went.",
+    "author": "Martin Dunn",
+    "author_sub": "Pioneer of professional surf coaching · Founder, eSurfR.com",
+    "stats": [
+      { "num_html": "<span>40+</span>", "label": "Years coaching surfers from grom to world tour." },
+      { "num_html": "8", "label": "Break types Surf Reader knows how to map." },
+      { "num_html": "7", "label": "Self-assessment criteria, calibrated for honest rating." },
+      { "num_html": "<span>5</span>", "label": "Languages at launch — surf coaching, your tongue." }
+    ]
+  },
+  "langs_strip": {
+    "eyebrow": "Surf, in your language",
+    "items": [
+      { "label": "English", "sub": "EN" },
+      { "label": "Español", "sub": "ES" },
+      { "label": "Português", "sub": "PT" },
+      { "label": "日本語", "sub": "JA" },
+      { "label": "Français", "sub": "FR" }
+    ]
+  },
+  "final": {
+    "h2_html": "Plan the surf you <em>want</em>.<br/>Then surf it.",
+    "lede": "Surf Reader is free to download, free to use, and built by surfers, for surfers — wherever you paddle out.",
+    "app_store_small": "Download on the",
+    "app_store_big": "App Store",
+    "google_play_small": "Get it on",
+    "google_play_big": "Google Play",
+    "caption": "No account required · Works fully offline · Your sessions stay on your device."
+  },
+  "footer": {
+    "copyright_html": "© 2026 Martin Dunn · <a href=\"https://www.esurfr.com/\" target=\"_blank\" rel=\"noopener\">eSurfR.com</a> · <a href=\"#\">Privacy</a> · <a href=\"#\">Support</a>"
+  },
+  "picker": {
+    "title_font_label": "Title font",
+    "subtitle_font_label": "Subtitle font",
+    "header": "Font picker (temp)",
+    "collapse": "—",
+    "expand": "+",
+    "status_loading": "Loading font catalogue…",
+    "status_missing": "Some font files are missing. See fonts/README.md.",
+    "status_ready": "Drop .woff2 files into fonts/<family>/ then refresh."
+  }
+}

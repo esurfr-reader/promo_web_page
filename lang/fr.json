@@ -1,0 +1,210 @@
+{
+  "_meta": {
+    "lang": "fr",
+    "name": "Français",
+    "code": "FR",
+    "status": "draft - needs native review"
+  },
+  "doc": {
+    "title": "Surf Reader — Lis la mer. Planifie ta session. Réfléchis après.",
+    "html_lang": "fr"
+  },
+  "nav": {
+    "how_it_works": "Comment ça marche",
+    "beach_maps": "Cartes de spot",
+    "review": "Bilan",
+    "method": "La méthode",
+    "cta": "Télécharger l'app"
+  },
+  "hero": {
+    "eyebrow": "Carnet et planificateur du surfeur",
+    "h1_html": "Lis la <span class=\"swell\">mer</span>.<br/>Planifie ta session.<br/>Réfléchis après.",
+    "lede": "Surf Reader est un compagnon de coaching de poche, bâti sur la méthode de Martin Dunn et ses 40 ans de coaching surf. Cartographie le spot, fixe ton intention avant de ramer, puis note la session que tu as vraiment eue — et regarde ta lecture de vagues progresser, session après session.",
+    "cta_primary": "Obtenir Surf Reader",
+    "cta_secondary": "Voir comment ça marche",
+    "meta_lead": "Utilise l'app et améliore ta sélection de vagues en 5 langues",
+    "lang_strip": ["English", "Español", "Português", "日本語", "Français"]
+  },
+  "trust": {
+    "label": "Sur les bases du coaching de Martin Dunn chez",
+    "brands": ["eSurfR.com", "MartinDunn.com.au", "Martin Dunn Surf Camps"]
+  },
+  "problem": {
+    "eyebrow": "Pourquoi les surfeurs stagnent ?",
+    "h2": "La plupart des sessions s'évaporent dès que la combi tombe.",
+    "lede": "Tu rames, tu surfes, tu rentres. Aucune trace de où tu étais assis, ce que tu as lu dans la houle, ce que tu as essayé. Surf Reader ferme la boucle — vite, sur la plage, dans la langue dans laquelle tu penses.",
+    "cards": [
+      {
+        "num": "01",
+        "title": "Tu lis le lineup, puis tu oublies ce que tu as vu.",
+        "body": "Les bancs bougent, les baïnes apparaissent, les pics dérivent. Surf Reader transforme ton observation en carte sauvegardée que tu consultes avant de ramer."
+      },
+      {
+        "num": "02",
+        "title": "Tu surfes sans intention.",
+        "body": "« Juste s'amuser » : bon mantra, mauvais plan de session. Le flux guidé en 7 questions te donne une chose précise à travailler aujourd'hui."
+      },
+      {
+        "num": "03",
+        "title": "Tu ne te notes jamais honnêtement.",
+        "body_html": "Sept critères, de une à dix étoiles. La moyenne devient ta <b>note de niveau</b>. Les tendances apparaissent. Les excuses, non."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "La boucle en 3 étapes",
+    "h2": "Cartographier. Planifier. Bilanter. Recommencer.",
+    "lede": "Une boucle simple, répétée à volonté. La même que Martin enseigne dans ses surf camps — désormais dans ta poche.",
+    "cards": [
+      {
+        "step": "Cartographier le spot",
+        "title": "Annote le lineup avec ton doigt.",
+        "body": "Choisis parmi 8 types de spot — plage ouverte, point, récif, embouchure, jetée et plus. Pose ton pin « Surfeur », dessine la direction de la vague, marque la baïne, place des repères. Sauvegarde auto."
+      },
+      {
+        "step": "Définis ton intention",
+        "title": "Plan guidé en sept questions.",
+        "body": "Où vas-tu te placer ? Comment vas-tu entrer ? Surf Reader te fait passer le flux de coaching en 7 questions de Martin et rédige un plan propre à conserver et relire."
+      },
+      {
+        "step": "Note ta session",
+        "title": "Sept critères, sur 10.",
+        "body": "De la rame à la sélection de vagues en passant par le placement — note-toi honnêtement. L'app calcule ta note de niveau et trace ta progression, en constituant une bibliothèque de sessions."
+      }
+    ]
+  },
+  "canvas": {
+    "eyebrow": "La toile carte de spot",
+    "h2": "Huit types de spot. Ta main. Un toucher pour planifier.",
+    "lede": "La toile est le cœur de Surf Reader — une surface de dessin tactile, compatible gants, conçue pour doigts mouillés et soleil cru. Essaie.",
+    "breaks": [
+      { "id": "open", "label": "Plage ouverte" },
+      { "id": "right_hand", "label": "Droite" },
+      { "id": "left_hand", "label": "Gauche" },
+      { "id": "reef", "label": "Récif" },
+      { "id": "outer_reef", "label": "Récif extérieur" },
+      { "id": "rivermouth", "label": "Embouchure" },
+      { "id": "pier", "label": "Jetée" },
+      { "id": "jetty", "label": "Digue" }
+    ],
+    "demo": {
+      "session_title": "Whale Beach",
+      "icons_count": "{n} icônes · {m} traits",
+      "mode_icons": "Icônes",
+      "mode_draw": "Dessiner",
+      "mode_tools": "Outils",
+      "draw_wave": "Vague",
+      "draw_rip": "Baïne",
+      "draw_freehand": "Libre",
+      "undo": "Annuler",
+      "clear": "Tout effacer",
+      "plan": "Planifier →",
+      "hint_start": "Touche une icône, puis la toile pour la placer.",
+      "hint_place": "Maintenant touche la toile pour placer : {label}",
+      "hint_drawn": "Bien — essaie de dessiner la vague.",
+      "hint_drag": "Glisse sur la toile pour dessiner {tool}.",
+      "hint_done": "Joli. Passe à « Outils » pour effacer ou continuer.",
+      "hint_cleared": "Effacé. Touche une icône pour commencer.",
+      "icon_labels": {
+        "me": "Surfeur",
+        "house": "Maison",
+        "tree": "Arbre",
+        "rocks": "Rochers",
+        "tower": "Tour sauveteurs",
+        "flag": "Drapeau",
+        "track": "Sentier",
+        "park": "Parking",
+        "building": "Bâtiment"
+      },
+      "break_short": {
+        "right_hand": "Droite",
+        "open": "Ouverte",
+        "reef": "Récif",
+        "rivermouth": "Embouchure"
+      }
+    }
+  },
+  "features": {
+    "eyebrow": "Pensée pour la plage",
+    "h2": "Conçue pour doigts mouillés, soleil cru et zéro patience.",
+    "lede": "Chaque détail calé sur le moment du parking entre la housse ouverte et la rame.",
+    "items": [
+      { "title": "Graphique de niveau", "body": "Ta dernière session et ta tendance globale, sur l'écran d'accueil. Le graphe qui motive la rame de demain." },
+      { "title": "Bibliothèque de sessions", "body": "Chaque session enregistrée par spot et date. Touche un surf passé pour relire ton plan, voir la carte et les étoiles." },
+      { "title": "Chrono de séries", "body": "Touche à l'arrivée de quatre séries — Surf Reader te donne l'intervalle moyen pour être bien placé à la prochaine." },
+      { "title": "Deux modes de plan", "body": "Flux guidé en 7 questions pour du coaching, ou notes libres « je vais… » quand tu connais déjà la vague." },
+      { "title": "Murmures de coach", "body": "Indices discrets, jamais de leçon. L'app enseigne la boucle le jour 1 et disparaît au jour 3 — sans gêner." },
+      { "title": "Offline-first", "body": "Pas de réseau dans les dunes ? Surf Reader s'en fiche. Tout reste sur l'appareil. Tes plans partent avec toi, pas dans le cloud." }
+    ]
+  },
+  "review": {
+    "eyebrow": "Le bilan post-session",
+    "h2": "Des étoiles honnêtes battent la mémoire optimiste.",
+    "lede": "Remonte la plage, assieds-toi sur le sable et note sept choses pendant que le surf est encore dans tes épaules. Surf Reader fait les calculs — toi tu surfes.",
+    "bullets": [
+      "7 critères d'auto-évaluation, un tap chacun",
+      "Moyennés en une note de niveau (sur 10)",
+      "Champ commentaires pour ce détail que tu voudras la prochaine fois"
+    ],
+    "demo": {
+      "session_title": "Whale Beach — Point droite",
+      "session_meta": "3 mai 2026 · 1,2 m propre · session 6h40 · Plan : « Ramer plus tôt, take-off plus tard. »",
+      "criteria": [
+        "Rame",
+        "Sélection de vagues",
+        "Timing du take-off",
+        "Bottom turn",
+        "Exécution",
+        "Nombre de vagues",
+        "Énergie & focus"
+      ],
+      "skill_rating": "Note de niveau",
+      "tip": "Astuce : touche une étoile pour modifier — les totaux se mettent à jour en direct."
+    }
+  },
+  "method": {
+    "eyebrow": "La méthode Surf Reader",
+    "h2": "Quarante ans de coaching, distillés en une boucle.",
+    "quote": "Les surfeurs qui progressent le plus vite ne sont pas les plus doués. Ce sont ceux qui planifient une session, surfent le plan, et se disent la vérité sur le résultat.",
+    "author": "Martin Dunn",
+    "author_sub": "Pionnier du coaching surf professionnel · Fondateur, eSurfR.com",
+    "stats": [
+      { "num_html": "<span>40+</span>", "label": "Années à coacher des surfeurs, du grommet au tour mondial." },
+      { "num_html": "8", "label": "Types de spot que Surf Reader sait cartographier." },
+      { "num_html": "7", "label": "Critères d'auto-évaluation, calibrés pour la franchise." },
+      { "num_html": "<span>5</span>", "label": "Langues au lancement — coaching surf dans ta langue." }
+    ]
+  },
+  "langs_strip": {
+    "eyebrow": "Surfe dans ta langue",
+    "items": [
+      { "label": "English", "sub": "EN" },
+      { "label": "Español", "sub": "ES" },
+      { "label": "Português", "sub": "PT" },
+      { "label": "日本語", "sub": "JA" },
+      { "label": "Français", "sub": "FR" }
+    ]
+  },
+  "final": {
+    "h2_html": "Planifie le surf que tu <em>veux</em>.<br/>Puis surfe-le.",
+    "lede": "Surf Reader est gratuit, fait par des surfeurs pour des surfeurs — où que tu rames.",
+    "app_store_small": "Télécharge sur",
+    "app_store_big": "App Store",
+    "google_play_small": "Disponible sur",
+    "google_play_big": "Google Play",
+    "caption": "Pas de compte · 100% hors ligne · Tes sessions restent sur ton appareil."
+  },
+  "footer": {
+    "copyright_html": "© 2026 Martin Dunn · <a href=\"https://www.esurfr.com/\" target=\"_blank\" rel=\"noopener\">eSurfR.com</a> · <a href=\"#\">Confidentialité</a> · <a href=\"#\">Support</a>"
+  },
+  "picker": {
+    "title_font_label": "Police titre",
+    "subtitle_font_label": "Police sous-titre",
+    "header": "Sélecteur de polices (temp)",
+    "collapse": "—",
+    "expand": "+",
+    "status_loading": "Chargement du catalogue…",
+    "status_missing": "Fichiers de police manquants. Voir fonts/README.md.",
+    "status_ready": "Mets les .woff2 dans fonts/<famille>/ puis recharge."
+  }
+}
