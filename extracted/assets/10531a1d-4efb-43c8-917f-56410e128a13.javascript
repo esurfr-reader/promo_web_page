@@ -1,4 +1,4 @@
-/* Surf Reader promo — interactive bits */
+/* Surf Reader promo - interactive bits */
 
 const { useState, useRef, useEffect, useMemo } = React;
 
@@ -221,7 +221,7 @@ function CanvasDemo() {
     const id = `${selectedIcon}-${Date.now()}`;
     setPlaced(p => [...p, { id, iconId: selectedIcon, x: c.x, y: c.y }]);
     setSelectedIcon(null);
-    setHint('Nice — try drawing the wave next.');
+    setHint('Nice - try drawing the wave next.');
   }
 
   function onStageDown(e) {
@@ -423,7 +423,7 @@ function ReviewDemo() {
 
   return (
     <div className="review-card">
-      <h4>Whale Beach — Right-hand point</h4>
+      <h4>Whale Beach - Right-hand point</h4>
       <div className="session-meta">3 May 2026 · 1.2m clean · 6:40am session · Plan: "Earlier paddle, later drop."</div>
 
       {CRITERIA.map((c,i)=>(
@@ -451,7 +451,7 @@ function ReviewDemo() {
         </div>
       </div>
 
-      <div style={{marginTop:14,fontSize:12.5,color:'#5b6e85'}}>Tip: tap a star to update — totals recompute live.</div>
+      <div style={{marginTop:14,fontSize:12.5,color:'#5b6e85'}}>Tip: tap a star to update - totals recompute live.</div>
     </div>
   );
 }

@@ -46,7 +46,7 @@ export default function Review() {
             }}
           >
             <Text style={{ fontFamily: fonts.display, fontSize: 18, fontWeight: "700", color: colors.ink }}>
-              Whale Beach — Right-hand point
+              Whale Beach - Right-hand point
             </Text>
             <Text style={{ marginTop: 6, fontSize: 12.5, color: colors.ink2 }}>
               3 May 2026 · 1.2m clean · 6:40am session

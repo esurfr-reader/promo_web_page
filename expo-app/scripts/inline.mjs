@@ -162,7 +162,7 @@ async function replaceAsync(str, regex, fn) {
 (async () => {
   const html = await readMaybe(HTML_IN);
   if (!html) {
-    console.error(`[inline] ${HTML_IN} not found — run \`npx expo export -p web\` first.`);
+    console.error(`[inline] ${HTML_IN} not found - run \`npx expo export -p web\` first.`);
     process.exit(1);
   }
   const inlined = await inlineHtml(html.toString("utf8"));

@@ -1,4 +1,4 @@
-/* Surf Reader — i18n loader
+/* Surf Reader - i18n loader
    Fetches lang/<code>.json and swaps content on:
      [data-i18n="key.path"]            → textContent
      [data-i18n-html="key.path"]       → innerHTML

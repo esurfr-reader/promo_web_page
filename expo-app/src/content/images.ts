@@ -1,8 +1,8 @@
 /**
  * Localised image registry. Every image lives once per language under
  *   public/assets/<lng>/<filename>.png
- * Filenames stay identical across languages — only the text in the image
- * changes — so swapping a translated version is a drop-in replacement.
+ * Filenames stay identical across languages - only the text in the image
+ * changes - so swapping a translated version is a drop-in replacement.
  *
  * Usage:
  *   const images = useLocalizedImages();
@@ -60,7 +60,7 @@ const FALLBACK: Lng = "en";
 
 /**
  * Every path enumerated as a literal string. Do not refactor to template
- * literals — the inliner relies on these being static for single-file
+ * literals - the inliner relies on these being static for single-file
  * builds. To change the file name for a key, change it in every block.
  */
 export const IMAGES_BY_LNG: Record<Lng, ImageSet> = {
@@ -200,7 +200,7 @@ export function getImages(lng: Lng): ImageSet {
   return IMAGES_BY_LNG[lng];
 }
 
-/** Reactive image set — re-renders when the user changes language. */
+/** Reactive image set - re-renders when the user changes language. */
 export function useLocalizedImages(): ImageSet {
   const { i18n } = useTranslation();
   const raw = (i18n.resolvedLanguage ?? i18n.language ?? FALLBACK).split("-")[0];
