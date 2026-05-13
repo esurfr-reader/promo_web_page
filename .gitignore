@@ -11,3 +11,4 @@ dist
 *.zip
 assets/i18n/_raw/
 assets/i18n/unsorted/
+nanobanana-output/*

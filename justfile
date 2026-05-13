@@ -65,3 +65,6 @@ localize-images lang="all":
           "$lang/$name" "$raw" "$out" "${W}x${H}" "$off"
       done
     done
+
+g_session:
+    @gemini --approval-mode yolo

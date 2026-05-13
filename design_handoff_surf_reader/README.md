@@ -204,7 +204,7 @@ Sunset CTA shadow: `0 8px 22px rgba(240, 138, 42, .35)`.
 
 ### 8. Review demo (`#review`)
 - 2-column grid `1fr 1fr`, 56px gap (stacks at <980px).
-- Left: eyebrow "The post-surf review" + h2 "Honest stars beat hopeful memory." + lede + 3-item checklist (sunset checkmarks):
+- Left: eyebrow "The post-surf review" + h2 "Honest review beats hopeful memory." + lede + 3-item checklist (sunset checkmarks):
   - "7 self-assessment criteria, one tap each"
   - "Auto-averaged into a single Skill Rating (out of 10)"
   - "Comments field for that one detail you'll want next time"
