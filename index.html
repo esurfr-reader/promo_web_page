@@ -9,7 +9,7 @@
 <!-- Locked font pair: Exo (display) + Iosevka Charon Mono (body).
      Loaded as @font-face from /fonts/ (see css/styles.css). -->
 
-<link rel="stylesheet" href="css/styles.css?v=3" />
+<link rel="stylesheet" href="css/styles.css?v=4" />
 </head>
 <body>
 
@@ -183,14 +183,6 @@
     </div>
 
     <div id="canvasFullscreenWrap" class="canvas-fs-wrap">
-      <button type="button" id="canvasExpandBtn" class="canvas-expand-btn"
-              aria-label="Expand canvas to fullscreen landscape">
-        <span data-i18n="canvas.expand">Expand</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
-        </svg>
-      </button>
       <div id="canvasDemo"></div>
       <div id="canvasRotateHint" class="canvas-rotate-hint" hidden>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -406,7 +398,7 @@
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
-<script type="text/babel" data-presets="react" src="js/app.jsx?v=2"></script>
+<script type="text/babel" data-presets="react" src="js/app.jsx?v=3"></script>
 
 <!-- Reveal-on-scroll -->
 <script>
@@ -430,23 +422,15 @@
   const isIOS = /iPad|iPhone|iPod/.test(ua) ||
                 (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   const wrap = document.getElementById('canvasFullscreenWrap');
-  const btn = document.getElementById('canvasExpandBtn');
   const hint = document.getElementById('canvasRotateHint');
-  if (!wrap || !btn || !hint) return;
+  if (!wrap || !hint) return;
 
   const isMobileViewport = () => window.matchMedia('(max-width: 760px)').matches;
   const isPortrait = () => window.matchMedia('(orientation: portrait)').matches;
   const fsSupported = !!(document.fullscreenEnabled || document.webkitFullscreenEnabled);
 
-  // iOS Safari can't fullscreen a div - swap the button label to a rotate prompt instead.
-  if (isIOS) {
-    const label = btn.querySelector('span');
-    if (label) label.setAttribute('data-i18n', 'canvas.rotate_prompt');
-  }
-
   async function enterFullscreen() {
     if (isIOS || !fsSupported) {
-      // No real fullscreen path - just nudge the rotate hint.
       hint.hidden = false;
       hint.scrollIntoView({ behavior: 'smooth', block: 'center' });
       return;
@@ -462,9 +446,31 @@
       hint.hidden = false;
     }
   }
-  btn.addEventListener('click', enterFullscreen);
 
-  // Show rotate hint when canvas section enters viewport on a portrait mobile screen.
+  // React renders the expand button after mount. Poll briefly for it, then attach.
+  function wireInlineButton() {
+    const btn = document.getElementById('canvasExpandBtnInline');
+    if (!btn) return false;
+    if (isIOS) {
+      const label = btn.querySelector('span');
+      if (label) {
+        label.setAttribute('data-i18n', 'canvas.rotate_prompt');
+        const live = window.SR_I18N && window.SR_I18N.canvas && window.SR_I18N.canvas.rotate_prompt;
+        if (live) label.textContent = live;
+      }
+    }
+    btn.addEventListener('click', enterFullscreen);
+    return true;
+  }
+  let tries = 0;
+  const wireTimer = setInterval(() => {
+    if (wireInlineButton() || ++tries > 40) clearInterval(wireTimer);
+  }, 100);
+  // Re-wire if React re-renders the button on lang change.
+  window.addEventListener('sr:lang-changed', () => {
+    setTimeout(wireInlineButton, 50);
+  });
+
   const updateHint = (sectionVisible) => {
     const show = sectionVisible && isMobileViewport() && isPortrait();
     hint.hidden = !show;

@@ -1,4 +1,4 @@
-/* Surf Reader promo — interactive React widgets (flow visuals, canvas demo, review demo).
+/* Surf Reader promo - interactive React widgets (flow visuals, canvas demo, review demo).
    Loaded via Babel standalone from index.html. Reads localized strings from
    window.SR_I18N (populated by js/i18n.js) and re-renders on `sr:lang-changed`. */
 
@@ -36,11 +36,11 @@ function Flow1Map() {
   return (
     <div style={{position:'absolute',inset:0}}>
       <img src="assets/beach_right_hand.png"
-           alt="Annotated right-hand point break — TODO swap with real app screenshot"
+           alt="Annotated right-hand point break - TODO swap with real app screenshot"
            data-img-role="flow-map-bg"
            style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover'}}/>
 
-      {/* Straight wave + rip — mirrors CanvasDemo render style */}
+      {/* Straight wave + rip - mirrors CanvasDemo render style */}
       <svg viewBox="0 0 400 280" style={{position:'absolute',inset:0,width:'100%',height:'100%',pointerEvents:'none',filter:SHADOW}} preserveAspectRatio="none">
         <defs>
           <marker id="arr1" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto">
@@ -74,7 +74,7 @@ function Flow2Plan() {
   return (
     <div style={{position:'absolute',inset:0,background:'#000'}}>
       <img src={src}
-           alt={alt + ' — Surf Reader guided plan screen'}
+           alt={alt + ' - Surf Reader guided plan screen'}
            data-img-role="flow-plan-bg"
            onError={(e)=>{ if(e.currentTarget.src.indexOf(fallback)===-1){ e.currentTarget.src = fallback; } }}
            style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',display:'block'}}/>
@@ -90,7 +90,7 @@ function Flow3Review() {
   return (
     <div style={{position:'absolute',inset:0,background:'#000'}}>
       <img src={src}
-           alt={alt + ' — Surf Reader review panel'}
+           alt={alt + ' - Surf Reader review panel'}
            data-img-role="flow-review-bg"
            onError={(e)=>{ if(e.currentTarget.src.indexOf(fallback)===-1){ e.currentTarget.src = fallback; } }}
            style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'contain',display:'block'}}/>
@@ -201,7 +201,7 @@ function CanvasDemo() {
     const id = `${selectedIcon}-${Date.now()}`;
     setPlaced(p => [...p, { id, iconId: selectedIcon, x: c.x, y: c.y }]);
     setSelectedIcon(null);
-    setHint(tPath("canvas.demo.hint_drawn", "Nice — try drawing the wave next."));
+    setHint(tPath("canvas.demo.hint_drawn", "Nice - try drawing the wave next."));
   }
 
   function onStageDown(e) {
@@ -209,7 +209,7 @@ function CanvasDemo() {
     e.preventDefault?.();
     const c = relCoords(e); if (!c) return;
     setDrawing(true);
-    // Wave + rip render as straight lines — store only start/end points.
+    // Wave + rip render as straight lines - store only start/end points.
     setStrokes(s => [...s, { type: drawTool, thickness, points: [c, c] }]);
     // Auto-place a waveStart icon at the start of every wave stroke (mirrors app behaviour).
     if (drawTool === 'wave') {
@@ -223,7 +223,7 @@ function CanvasDemo() {
     setStrokes(s => {
       const cp = s.slice();
       const last = cp[cp.length-1];
-      // Replace end point with current cursor — straight line from start to current pos.
+      // Replace end point with current cursor - straight line from start to current pos.
       cp[cp.length-1] = { ...last, points: [last.points[0], c] };
       return cp;
     });
@@ -272,8 +272,6 @@ function CanvasDemo() {
         <div className="left">
           <h4>{sessionTitle} · {findBreakLabel(breakId)}</h4>
           <span className="pill">{formatStr(iconCountTpl, {n: placed.length, m: strokes.length})}</span>
-        </div>
-        <div className="right">
           {BREAK_IDS.map(id => (
             <button key={id}
               onClick={()=>setBreakId(id)}
@@ -282,6 +280,16 @@ function CanvasDemo() {
               {tPath(`canvas.demo.break_short.${id}`, findBreakLabel(id).split(' ')[0])}
             </button>
           ))}
+        </div>
+        <div className="right">
+          <button type="button" id="canvasExpandBtnInline" className="canvas-expand-btn canvas-expand-btn--inline"
+                  aria-label="Expand canvas to fullscreen landscape">
+            <span data-i18n="canvas.expand">{tPath("canvas.expand", "Expand")}</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -295,7 +303,7 @@ function CanvasDemo() {
       >
         <img className="bg"
              src={BREAK_IMG[breakId]}
-             alt={findBreakLabel(breakId) + ' — beach aerial reference, TODO swap with real-app screenshot'}
+             alt={findBreakLabel(breakId) + ' - beach aerial reference, TODO swap with real-app screenshot'}
              data-img-role={`break-${breakId}`}/>
 
         <svg viewBox={`0 0 ${stageRect()?.width||1000} ${stageRect()?.height||562}`} style={{position:'absolute',inset:0,width:'100%',height:'100%',pointerEvents:'none',filter:STROKE_SHADOW}}>
@@ -451,7 +459,7 @@ function ReviewDemo() {
 
   return (
     <div className="review-card">
-      <h4>{tPath("review.demo.session_title", "Whale Beach — Right-hand point")}</h4>
+      <h4>{tPath("review.demo.session_title", "Whale Beach - Right-hand point")}</h4>
       <div className="session-meta">{tPath("review.demo.session_meta", "")}</div>
 
       {criteria.map((c,i)=>(

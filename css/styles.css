@@ -532,14 +532,10 @@ section { position: relative; }
   position: relative;
 }
 .canvas-expand-btn {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  z-index: 5;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: var(--navy);
+  background: var(--sunset);
   color: white;
   border: none;
   border-radius: 999px;
@@ -549,10 +545,18 @@ section { position: relative; }
   font-weight: 600;
   letter-spacing: 0.04em;
   cursor: pointer;
-  box-shadow: var(--shadow-sm);
-  transition: transform .15s ease, background .15s ease;
+  box-shadow: 0 4px 12px rgba(255, 122, 18, .25);
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+  white-space: nowrap;
 }
-.canvas-expand-btn:hover { background: var(--navy-soft); transform: translateY(-1px); }
+.canvas-expand-btn:hover {
+  background: var(--sunset-deep);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 122, 18, .35);
+}
+.canvas-expand-btn--inline { margin-left: auto; }
+/* Wrap break-short buttons under title on narrow widths. */
+.canvas-meta .left { flex-wrap: wrap; row-gap: 8px; }
 .canvas-rotate-hint {
   display: inline-flex;
   align-items: center;
