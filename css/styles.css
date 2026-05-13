@@ -50,7 +50,7 @@
 }
 
 :root {
-  /* App palette — single source of truth (mirrors expo-app palette). */
+  /* App palette - single source of truth (mirrors expo-app palette). */
   --deep-twilight: #03045e;
   --bright-teal-blue: #0077b6;
   --turquoise-surf: #00b4d8;
@@ -60,10 +60,10 @@
   --neon-green: #39ff14;
   --burnt-orange: #ff7a12;
 
-  /* Shared teal/sky gradient — phone screen, flow visuals, hero wave. */
+  /* Shared teal/sky gradient - phone screen, flow visuals, hero wave. */
   --grad-sky: linear-gradient(180deg, var(--frosted-blue) 0%, var(--turquoise-surf) 55%, var(--bright-teal-blue) 100%);
   --grad-sky-diag: linear-gradient(135deg, var(--frosted-blue) 0%, var(--turquoise-surf) 55%, var(--bright-teal-blue) 100%);
-  /* Shared dark-navy gradient — canvas, method, final-CTA, problem sections. */
+  /* Shared dark-navy gradient - canvas, method, final-CTA, problem sections. */
   --grad-navy: linear-gradient(180deg, var(--deep-twilight) 0%, var(--deep-twilight) 60%, #050670 80%, var(--deep-twilight) 100%);
 
   --ink: var(--deep-twilight);
@@ -526,6 +526,70 @@ section { position: relative; }
   max-width: 1080px;
   margin: 0 auto;
 }
+
+/* ---------- canvas fullscreen wrap ---------- */
+.canvas-fs-wrap {
+  position: relative;
+}
+.canvas-expand-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--navy);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform .15s ease, background .15s ease;
+}
+.canvas-expand-btn:hover { background: var(--navy-soft); transform: translateY(-1px); }
+.canvas-rotate-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 14px auto 0;
+  padding: 10px 16px;
+  background: rgba(255,255,255,.92);
+  color: var(--navy);
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+  max-width: max-content;
+}
+.canvas-rotate-hint[hidden] { display: none; }
+.canvas-fs-wrap:has(.canvas-rotate-hint:not([hidden])) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fullscreen styles - applied by Fullscreen API when canvas-fs-wrap enters fullscreen.
+   Lock background and let the canvas frame fill the viewport. */
+.canvas-fs-wrap:fullscreen {
+  background: var(--deep-twilight);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.canvas-fs-wrap:fullscreen #canvasDemo {
+  width: 100%;
+  max-width: none;
+}
+.canvas-fs-wrap:fullscreen .canvas-rotate-hint { display: none; }
 .canvas-meta {
   display: flex; align-items: center; justify-content: space-between;
   color: var(--ink);

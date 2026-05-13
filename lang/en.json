@@ -14,7 +14,7 @@
     "name": "Surf Reader"
   },
   "doc": {
-    "title": "Surf Reader — Read the surf. Plan your session. Reflect after.",
+    "title": "Surf Reader - Read the surf. Plan your session. Reflect after.",
     "html_lang": "en"
   },
   "nav": {
@@ -27,7 +27,7 @@
   "hero": {
     "eyebrow": "A surfer's planner & journal",
     "h1_html": "Read the <span class=\"swell\">surf</span>.<br/>Plan your session.<br/>Reflect after.",
-    "lede": "Surf Reader is a pocket-sized coaching companion built around Martin Dunn's 40-year surf-coaching method. Map the break, set your intention before paddling out, then rate the surf you actually had — and watch your wave selection expertise grow session by session.",
+    "lede": "Surf Reader is a pocket-sized coaching companion built around Martin Dunn's 40-year surf-coaching method. Map the break, set your intention before paddling out, then rate the surf you actually had - and watch your wave selection expertise grow session by session.",
     "cta_primary": "Get Surf Reader",
     "cta_secondary": "See how it works",
     "meta_lead": "Use the app and learn better wave selection in 5 languages",
@@ -50,7 +50,7 @@
   "problem": {
     "eyebrow": "Why surfers plateau?",
     "h2": "Most sessions vanish the moment your wetsuit comes off.",
-    "lede": "You paddle out, you surf, you drive home. No record of where you sat, what you read in the swell, or what you actually did differently. Surf Reader closes that loop — quickly, on the beach, in the language you think in.",
+    "lede": "You paddle out, you surf, you drive home. No record of where you sat, what you read in the swell, or what you actually did differently. Surf Reader closes that loop - quickly, on the beach, in the language you think in.",
     "cards": [
       {
         "num": "01",
@@ -72,12 +72,12 @@
   "how": {
     "eyebrow": "The 3-step loop",
     "h2": "Map. Plan. Review. Repeat.",
-    "lede": "One simple loop, repeated anytime you want. The same one Martin teaches at his surf camps — now in your pocket.",
+    "lede": "One simple loop, repeated anytime you want. The same one Martin teaches at his surf camps - now in your pocket.",
     "cards": [
       {
         "step": "Map the break",
         "title": "Annotate the lineup with your finger.",
-        "body": "Pick from 8 break types — open beach, point, reef, rivermouth, breakwall and more. Drop your \"Surfer\" pin, draw the wave direction, mark the rip, place landmarks. Auto-saved as you draw."
+        "body": "Pick from 8 break types - open beach, point, reef, rivermouth, breakwall and more. Drop your \"Surfer\" pin, draw the wave direction, mark the rip, place landmarks. Auto-saved as you draw."
       },
       {
         "step": "Set your intention",
@@ -87,14 +87,14 @@
       {
         "step": "Rate your surf",
         "title": "Seven criteria, rated out of 10.",
-        "body": "From paddle-out to wave selection to positioning — score yourself honestly. The app calculates your skill rating and charts your progression, creating a session library in the process."
+        "body": "From paddle-out to wave selection to positioning - score yourself honestly. The app calculates your skill rating and charts your progression, creating a session library in the process."
       }
     ]
   },
   "canvas": {
     "eyebrow": "The beach map canvas",
     "h2": "Eight break types. Your hand. One tap to plan.",
-    "lede": "The canvas is the heart of Surf Reader — a touch-first, glove-friendly drawing surface designed for wet fingers and bright sunlight.",
+    "lede": "The canvas is the heart of Surf Reader - a touch-first, glove-friendly drawing surface designed for wet fingers and bright sunlight.",
     "breaks": [
       {
         "id": "open",
@@ -143,7 +143,7 @@
       "plan": "Plan →",
       "hint_start": "Tap an icon, then tap the canvas to place it.",
       "hint_place": "Now tap the canvas to place: {label}",
-      "hint_drawn": "Nice — try drawing the wave next.",
+      "hint_drawn": "Nice - try drawing the wave next.",
       "hint_drag": "Drag on the canvas to draw {tool}.",
       "hint_done": "Looking good. Switch to \"Tools\" to clear or move on.",
       "hint_cleared": "Cleared. Tap an icon to start placing.",
@@ -172,7 +172,10 @@
       "thickness_med": "Med",
       "thickness_lg": "Lg"
     },
-    "demo_cta": "Give it a try — this is a working demo"
+    "demo_cta": "Give it a try - this is a working demo",
+    "expand": "Expand",
+    "rotate_hint": "Rotate your phone or tap Expand for a bigger canvas.",
+    "rotate_prompt": "Rotate phone"
   },
   "features": {
     "eyebrow": "Built for the beach",
@@ -189,7 +192,7 @@
       },
       {
         "title": "Set Timer",
-        "body": "Tap as four sets roll in — Surf Reader gives you the average interval so you can be in position when the next one arrives."
+        "body": "Tap as four sets roll in - Surf Reader gives you the average interval so you can be in position when the next one arrives."
       },
       {
         "title": "Two planning modes",
@@ -197,7 +200,7 @@
       },
       {
         "title": "Coaching whispers",
-        "body": "Subtle prompts, never lectures. The app teaches the loop on day one and disappears by day three — out of your way."
+        "body": "Subtle prompts, never lectures. The app teaches the loop on day one and disappears by day three - out of your way."
       },
       {
         "title": "Offline-first",
@@ -208,14 +211,14 @@
   "review": {
     "eyebrow": "The post-surf review",
     "h2": "Honest review beats hopeful memory.",
-    "lede": "Walk back up the beach, sit on the sand, and rate seven things while the surf is still in your mind. Surf Reader does the maths — you just do the surf.",
+    "lede": "Walk back up the beach, sit on the sand, and rate seven things while the surf is still in your mind. Surf Reader does the maths - you just surf.",
     "bullets": [
       "7 self-assessment criteria, one tap each",
       "Auto-averaged into a single Skill Rating (out of 10)",
       "Comments field for that one detail you'll want next time"
     ],
     "demo": {
-      "session_title": "Whale Beach — Right-hand point",
+      "session_title": "Whale Beach - Right-hand point",
       "session_meta": "3 May 2026 · 1.2m clean · 6:40am session · Plan: \"Earlier paddle, later drop.\"",
       "criteria": [
         "Paddle out",
@@ -227,7 +230,7 @@
         "Energy & focus"
       ],
       "skill_rating": "Skill Rating",
-      "tip": "Tip: tap a star to update — totals recompute live."
+      "tip": "Tip: tap a star to update - totals recompute live."
     }
   },
   "method": {
@@ -251,7 +254,7 @@
       },
       {
         "num_html": "<span>5</span>",
-        "label": "Languages at launch — surf coaching, your tongue."
+        "label": "Languages at launch - surf coaching, your tongue."
       }
     ]
   },
@@ -282,7 +285,7 @@
   },
   "final": {
     "h2_html": "Plan the surf you <em>want</em>.<br/>Then surf it.",
-    "lede": "Surf Reader is free to download, free to use, and built by surfers, for surfers — wherever you paddle out.",
+    "lede": "Surf Reader is free to download, free to use, and built by surfers, for surfers - wherever you paddle out.",
     "app_store_small": "Download on the",
     "app_store_big": "App Store",
     "google_play_small": "Get it on",

@@ -14,7 +14,7 @@
     "name": "Sœurf Rideur"
   },
   "doc": {
-    "title": "Surf Reader — Lis la mer. Planifie ta session. Réfléchis après.",
+    "title": "Surf Reader - Lis la mer. Planifie ta session. Réfléchis après.",
     "html_lang": "fr"
   },
   "nav": {
@@ -27,7 +27,7 @@
   "hero": {
     "eyebrow": "Carnet et planificateur du surfeur",
     "h1_html": "Lis la <span class=\"swell\">mer</span>.<br/>Planifie ta session.<br/>Réfléchis après.",
-    "lede": "Surf Reader est un compagnon de coaching de poche, bâti sur la méthode de Martin Dunn et ses 40 ans de coaching surf. Cartographie le spot, fixe ton intention avant de ramer, puis note la session que tu as vraiment eue — et regarde ta lecture de vagues progresser, session après session.",
+    "lede": "Surf Reader est un compagnon de coaching de poche, bâti sur la méthode de Martin Dunn et ses 40 ans de coaching surf. Cartographie le spot, fixe ton intention avant de ramer, puis note la session que tu as vraiment eue - et regarde ta lecture de vagues progresser, session après session.",
     "cta_primary": "Obtenir Surf Reader",
     "cta_secondary": "Voir comment ça marche",
     "meta_lead": "Utilise l'app et améliore ta sélection de vagues en 5 langues",
@@ -50,7 +50,7 @@
   "problem": {
     "eyebrow": "Pourquoi les surfeurs stagnent ?",
     "h2": "La plupart des sessions s'évaporent dès que la combi tombe.",
-    "lede": "Tu rames, tu surfes, tu rentres. Aucune trace de où tu étais assis, ce que tu as lu dans la houle, ce que tu as essayé. Surf Reader ferme la boucle — vite, sur la plage, dans la langue dans laquelle tu penses.",
+    "lede": "Tu rames, tu surfes, tu rentres. Aucune trace de où tu étais assis, ce que tu as lu dans la houle, ce que tu as essayé. Surf Reader ferme la boucle - vite, sur la plage, dans la langue dans laquelle tu penses.",
     "cards": [
       {
         "num": "01",
@@ -72,12 +72,12 @@
   "how": {
     "eyebrow": "La boucle en 3 étapes",
     "h2": "Cartographier. Planifier. Bilanter. Recommencer.",
-    "lede": "Une boucle simple, répétée à volonté. La même que Martin enseigne dans ses surf camps — désormais dans ta poche.",
+    "lede": "Une boucle simple, répétée à volonté. La même que Martin enseigne dans ses surf camps - désormais dans ta poche.",
     "cards": [
       {
         "step": "Cartographier le spot",
         "title": "Annote le lineup avec ton doigt.",
-        "body": "Choisis parmi 8 types de spot — plage ouverte, point, récif, embouchure, jetée et plus. Pose ton pin « Surfeur », dessine la direction de la vague, marque la baïne, place des repères. Sauvegarde auto."
+        "body": "Choisis parmi 8 types de spot - plage ouverte, point, récif, embouchure, jetée et plus. Pose ton pin « Surfeur », dessine la direction de la vague, marque la baïne, place des repères. Sauvegarde auto."
       },
       {
         "step": "Définis ton intention",
@@ -87,14 +87,14 @@
       {
         "step": "Note ta session",
         "title": "Sept critères, sur 10.",
-        "body": "De la rame à la sélection de vagues en passant par le placement — note-toi honnêtement. L'app calcule ta note de niveau et trace ta progression, en constituant une bibliothèque de sessions."
+        "body": "De la rame à la sélection de vagues en passant par le placement - note-toi honnêtement. L'app calcule ta note de niveau et trace ta progression, en constituant une bibliothèque de sessions."
       }
     ]
   },
   "canvas": {
     "eyebrow": "La toile carte de spot",
     "h2": "Huit types de spot. Ta main. Un toucher pour planifier.",
-    "lede": "La toile est le cœur de Surf Reader — une surface de dessin tactile, compatible gants, conçue pour doigts mouillés et soleil cru.",
+    "lede": "La toile est le cœur de Surf Reader - une surface de dessin tactile, compatible gants, conçue pour doigts mouillés et soleil cru.",
     "breaks": [
       {
         "id": "open",
@@ -143,7 +143,7 @@
       "plan": "Planifier →",
       "hint_start": "Touche une icône, puis la toile pour la placer.",
       "hint_place": "Maintenant touche la toile pour placer : {label}",
-      "hint_drawn": "Bien — essaie de dessiner la vague.",
+      "hint_drawn": "Bien - essaie de dessiner la vague.",
       "hint_drag": "Glisse sur la toile pour dessiner {tool}.",
       "hint_done": "Joli. Passe à « Outils » pour effacer ou continuer.",
       "hint_cleared": "Effacé. Touche une icône pour commencer.",
@@ -172,7 +172,10 @@
       "thickness_med": "Moy",
       "thickness_lg": "Épais"
     },
-    "demo_cta": "Essayez — ceci est une démo fonctionnelle"
+    "demo_cta": "Essayez - ceci est une démo fonctionnelle",
+    "expand": "Agrandir",
+    "rotate_hint": "Tournez le téléphone ou touchez Agrandir pour un canevas plus grand.",
+    "rotate_prompt": "Tournez le téléphone"
   },
   "features": {
     "eyebrow": "Pensée pour la plage",
@@ -189,7 +192,7 @@
       },
       {
         "title": "Chrono de séries",
-        "body": "Touche à l'arrivée de quatre séries — Surf Reader te donne l'intervalle moyen pour être bien placé à la prochaine."
+        "body": "Touche à l'arrivée de quatre séries - Surf Reader te donne l'intervalle moyen pour être bien placé à la prochaine."
       },
       {
         "title": "Deux modes de plan",
@@ -197,7 +200,7 @@
       },
       {
         "title": "Murmures de coach",
-        "body": "Indices discrets, jamais de leçon. L'app enseigne la boucle le jour 1 et disparaît au jour 3 — sans gêner."
+        "body": "Indices discrets, jamais de leçon. L'app enseigne la boucle le jour 1 et disparaît au jour 3 - sans gêner."
       },
       {
         "title": "Offline-first",
@@ -208,14 +211,14 @@
   "review": {
     "eyebrow": "Le bilan post-session",
     "h2": "Des étoiles honnêtes battent la mémoire optimiste.",
-    "lede": "Remonte la plage, assieds-toi sur le sable et note sept choses pendant que le surf est encore dans tes épaules. Surf Reader fait les calculs — toi tu surfes.",
+    "lede": "Remonte la plage, assieds-toi sur le sable et note sept choses pendant que le surf est encore dans tes épaules. Surf Reader fait les calculs - toi tu surfes.",
     "bullets": [
       "7 critères d'auto-évaluation, un tap chacun",
       "Moyennés en une note de niveau (sur 10)",
       "Champ commentaires pour ce détail que tu voudras la prochaine fois"
     ],
     "demo": {
-      "session_title": "Whale Beach — Point droite",
+      "session_title": "Whale Beach - Point droite",
       "session_meta": "3 mai 2026 · 1,2 m propre · session 6h40 · Plan : « Ramer plus tôt, take-off plus tard. »",
       "criteria": [
         "Rame",
@@ -227,7 +230,7 @@
         "Énergie & focus"
       ],
       "skill_rating": "Note de niveau",
-      "tip": "Astuce : touche une étoile pour modifier — les totaux se mettent à jour en direct."
+      "tip": "Astuce : touche une étoile pour modifier - les totaux se mettent à jour en direct."
     }
   },
   "method": {
@@ -251,7 +254,7 @@
       },
       {
         "num_html": "<span>5</span>",
-        "label": "Langues au lancement — coaching surf dans ta langue."
+        "label": "Langues au lancement - coaching surf dans ta langue."
       }
     ]
   },
@@ -282,7 +285,7 @@
   },
   "final": {
     "h2_html": "Planifie le surf que tu <em>veux</em>.<br/>Puis surfe-le.",
-    "lede": "Surf Reader est gratuit, fait par des surfeurs pour des surfeurs — où que tu rames.",
+    "lede": "Surf Reader est gratuit, fait par des surfeurs pour des surfeurs - où que tu rames.",
     "app_store_small": "Télécharge sur",
     "app_store_big": "App Store",
     "google_play_small": "Disponible sur",
