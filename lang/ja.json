@@ -10,6 +10,9 @@
     "plan_shot": "assets/i18n/ja/plan_shot.png",
     "review_panel": "assets/i18n/ja/review_panel.png"
   },
+  "brand": {
+    "name": "サーフリーダー"
+  },
   "doc": {
     "title": "Surf Reader — 波を読む。セッションを計画する。あとで振り返る。",
     "html_lang": "ja"

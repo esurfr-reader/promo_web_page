@@ -10,6 +10,9 @@
     "plan_shot": "assets/i18n/pt/plan_shot.png",
     "review_panel": "assets/i18n/pt/review_panel.png"
   },
+  "brand": {
+    "name": "Surf Reader"
+  },
   "doc": {
     "title": "Surf Reader — Leia o mar. Planeie a sessão. Reflita depois.",
     "html_lang": "pt"
