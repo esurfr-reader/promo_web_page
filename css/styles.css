@@ -533,10 +533,8 @@ section { position: relative; }
   margin: 0 auto;
 }
 
-/* ---------- canvas fullscreen wrap ---------- */
-.canvas-fs-wrap {
-  position: relative;
-}
+/* ---------- canvas pseudo-fullscreen (CSS-only, no Fullscreen API) ---------- */
+.canvas-fs-wrap { position: relative; }
 .canvas-expand-btn {
   display: inline-flex;
   align-items: center;
@@ -560,45 +558,62 @@ section { position: relative; }
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(255, 122, 18, .35);
 }
-/* Wrap break-short + expand buttons on narrow widths. */
 .canvas-meta .right { flex-wrap: wrap; row-gap: 8px; justify-content: flex-end; }
-.canvas-rotate-hint {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin: 14px auto 0;
-  padding: 10px 16px;
-  background: rgba(255,255,255,.92);
-  color: var(--navy);
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  font-family: var(--sans);
-  font-size: 13px;
-  font-weight: 500;
-  box-shadow: var(--shadow-sm);
-  max-width: max-content;
-}
-.canvas-rotate-hint[hidden] { display: none; }
-.canvas-fs-wrap:has(.canvas-rotate-hint:not([hidden])) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-/* Fullscreen styles - applied by Fullscreen API when canvas-fs-wrap enters fullscreen.
-   Lock background and let the canvas frame fill the viewport. */
-.canvas-fs-wrap:fullscreen {
+.canvas-exit-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, .92);
+  color: var(--navy);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  -webkit-tap-highlight-color: transparent;
+}
+.canvas-exit-btn[hidden] { display: none !important; }
+
+.canvas-fs-wrap.canvas-fs-active {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 9999;
   background: var(--deep-twilight);
-  padding: 24px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  contain: layout paint;
+}
+.canvas-fs-wrap.canvas-fs-active #canvasDemo {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.canvas-fs-wrap:fullscreen #canvasDemo {
+.canvas-fs-wrap.canvas-fs-active .canvas-frame {
   width: 100%;
+  height: 100%;
   max-width: none;
+  display: flex;
+  flex-direction: column;
 }
-.canvas-fs-wrap:fullscreen .canvas-rotate-hint { display: none; }
+.canvas-fs-wrap.canvas-fs-active .canvas-stage { flex: 1; min-height: 0; }
+.canvas-fs-wrap.canvas-fs-active .canvas-exit-btn {
+  display: inline-flex;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+}
+.canvas-fs-wrap.canvas-fs-active .canvas-expand-btn { display: none; }
 .canvas-meta {
   display: flex; align-items: center; justify-content: space-between;
   color: var(--ink);

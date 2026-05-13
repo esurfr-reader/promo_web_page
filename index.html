@@ -9,7 +9,7 @@
 <!-- Locked font pair: Exo (display) + Iosevka Charon Mono (body).
      Loaded as @font-face from /fonts/ (see css/styles.css). -->
 
-<link rel="stylesheet" href="css/styles.css?v=6" />
+<link rel="stylesheet" href="css/styles.css?v=8" />
 </head>
 <body>
 
@@ -184,15 +184,13 @@
 
     <div id="canvasFullscreenWrap" class="canvas-fs-wrap">
       <div id="canvasDemo"></div>
-      <div id="canvasRotateHint" class="canvas-rotate-hint" hidden>
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="5" y="2" width="14" height="20" rx="2"/>
-          <path d="M12 18h.01"/>
-          <path d="M2 9l3-3 3 3" transform="rotate(-90 5 6)"/>
+      <button type="button" id="canvasExitBtn" class="canvas-exit-btn" hidden
+              aria-label="Exit fullscreen">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 6 6 18M6 6l12 12"/>
         </svg>
-        <span data-i18n="canvas.rotate_hint">Rotate your phone or tap Expand for a bigger canvas.</span>
-      </div>
+      </button>
     </div>
 
     <!-- TODO swap break-aerial photos with real-app screenshots when available -->
@@ -418,70 +416,33 @@
 <!-- Canvas mobile fullscreen + rotate hint -->
 <script>
 (function () {
-  const ua = navigator.userAgent || '';
-  const isIOS = /iPad|iPhone|iPod/.test(ua) ||
-                (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  // CSS-only pseudo-fullscreen. No Fullscreen API, no orientation lock,
+  // no IntersectionObserver, no polling - all of those caused jitter on
+  // mobile. Single class toggle on the wrap; CSS handles the rest.
   const wrap = document.getElementById('canvasFullscreenWrap');
-  const hint = document.getElementById('canvasRotateHint');
-  if (!wrap || !hint) return;
+  const exitBtn = document.getElementById('canvasExitBtn');
+  if (!wrap || !exitBtn) return;
+  const ACTIVE = 'canvas-fs-active';
 
-  const isMobileViewport = () => window.matchMedia('(max-width: 760px)').matches;
-  const isPortrait = () => window.matchMedia('(orientation: portrait)').matches;
-  const fsSupported = !!(document.fullscreenEnabled || document.webkitFullscreenEnabled);
-
-  async function enterFullscreen() {
-    if (isIOS || !fsSupported) {
-      hint.hidden = false;
-      hint.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      return;
-    }
-    try {
-      const req = wrap.requestFullscreen || wrap.webkitRequestFullscreen;
-      await req.call(wrap);
-      if (screen.orientation && screen.orientation.lock) {
-        try { await screen.orientation.lock('landscape'); } catch (_) { /* ignore */ }
-      }
-    } catch (err) {
-      console.warn('[canvas] fullscreen failed', err);
-      hint.hidden = false;
-    }
+  function enter() {
+    wrap.classList.add(ACTIVE);
+    exitBtn.hidden = false;
+  }
+  function exit() {
+    wrap.classList.remove(ACTIVE);
+    exitBtn.hidden = true;
   }
 
-  // React renders the expand button after mount. Poll briefly for it, then attach.
-  function wireInlineButton() {
-    const btn = document.getElementById('canvasExpandBtnInline');
-    if (!btn) return false;
-    if (isIOS) {
-      const label = btn.querySelector('span');
-      if (label) {
-        label.setAttribute('data-i18n', 'canvas.rotate_prompt');
-        const live = window.SR_I18N && window.SR_I18N.canvas && window.SR_I18N.canvas.rotate_prompt;
-        if (live) label.textContent = live;
-      }
-    }
-    btn.addEventListener('click', enterFullscreen);
-    return true;
-  }
-  let tries = 0;
-  const wireTimer = setInterval(() => {
-    if (wireInlineButton() || ++tries > 40) clearInterval(wireTimer);
-  }, 100);
-  // Re-wire if React re-renders the button on lang change.
-  window.addEventListener('sr:lang-changed', () => {
-    setTimeout(wireInlineButton, 50);
+  // Event delegation handles React re-mounts / lang re-renders without polling.
+  document.addEventListener('click', (e) => {
+    const expand = e.target.closest('#canvasExpandBtnInline');
+    if (expand) { e.preventDefault(); enter(); return; }
+    const close = e.target.closest('#canvasExitBtn');
+    if (close) { e.preventDefault(); exit(); return; }
   });
-
-  const updateHint = (sectionVisible) => {
-    const show = sectionVisible && isMobileViewport() && isPortrait();
-    hint.hidden = !show;
-  };
-  let sectionVisible = false;
-  const sectionIO = new IntersectionObserver((entries) => {
-    entries.forEach(e => { sectionVisible = e.isIntersecting; updateHint(sectionVisible); });
-  }, { threshold: 0.25 });
-  sectionIO.observe(wrap);
-  window.addEventListener('resize', () => updateHint(sectionVisible));
-  window.addEventListener('orientationchange', () => updateHint(sectionVisible));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && wrap.classList.contains(ACTIVE)) exit();
+  });
 })();
 </script>
 
