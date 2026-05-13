@@ -23,11 +23,21 @@
     "cta_primary": "Surf Readerを入手",
     "cta_secondary": "使い方を見る",
     "meta_lead": "5言語対応で、より良い波選びを身につけよう",
-    "lang_strip": ["English", "Español", "Português", "日本語", "Français"]
+    "lang_strip": [
+      "English",
+      "Español",
+      "Português",
+      "日本語",
+      "Français"
+    ]
   },
   "trust": {
     "label": "マーティン・ダンのコーチング基盤",
-    "brands": ["eSurfR.com", "MartinDunn.com.au", "Martin Dunn Surf Camps"]
+    "brands": [
+      "eSurfR.com",
+      "MartinDunn.com.au",
+      "Martin Dunn Surf Camps"
+    ]
   },
   "problem": {
     "eyebrow": "なぜサーファーは伸び悩むのか?",
@@ -76,16 +86,40 @@
   "canvas": {
     "eyebrow": "ビーチマップ・キャンバス",
     "h2": "8つのブレイク。あなたの手。タップ一つで計画。",
-    "lede": "キャンバスはSurf Readerの心臓部 — タッチ優先、グローブ対応、濡れた指と強い日差しのために設計されたドローイング面。試してみてください。",
+    "lede": "キャンバスはSurf Readerの心臓部 — タッチ優先、グローブ対応、濡れた指と強い日差しのために設計されたドローイング面。",
     "breaks": [
-      { "id": "open", "label": "オープンビーチ" },
-      { "id": "right_hand", "label": "ライトポイント" },
-      { "id": "left_hand", "label": "レフトポイント" },
-      { "id": "reef", "label": "ビーチリーフ" },
-      { "id": "outer_reef", "label": "アウターリーフ" },
-      { "id": "rivermouth", "label": "河口" },
-      { "id": "pier", "label": "ピア" },
-      { "id": "jetty", "label": "ジェティ" }
+      {
+        "id": "open",
+        "label": "オープンビーチ"
+      },
+      {
+        "id": "right_hand",
+        "label": "ライトポイント"
+      },
+      {
+        "id": "left_hand",
+        "label": "レフトポイント"
+      },
+      {
+        "id": "reef",
+        "label": "ビーチリーフ"
+      },
+      {
+        "id": "outer_reef",
+        "label": "アウターリーフ"
+      },
+      {
+        "id": "rivermouth",
+        "label": "河口"
+      },
+      {
+        "id": "pier",
+        "label": "ピア"
+      },
+      {
+        "id": "jetty",
+        "label": "ジェティ"
+      }
     ],
     "demo": {
       "session_title": "Whale Beach",
@@ -94,7 +128,7 @@
       "mode_draw": "描く",
       "mode_tools": "ツール",
       "draw_wave": "波",
-      "draw_rip": "リップ",
+      "draw_rip": "離岸流",
       "draw_freehand": "自由",
       "undo": "戻す",
       "clear": "全消去",
@@ -106,35 +140,61 @@
       "hint_done": "ばっちり。「ツール」に切り替えて消去または次へ。",
       "hint_cleared": "クリアしました。アイコンをタップして開始。",
       "icon_labels": {
-        "me": "サーファー",
+        "me": "自分",
         "house": "家",
         "tree": "木",
+        "lifeSaving": "ライフセービング",
         "rocks": "岩",
-        "tower": "ライフセーバー塔",
-        "flag": "フラッグ",
-        "track": "遊歩道",
-        "park": "駐車場",
-        "building": "建物"
+        "carpark": "駐車場",
+        "beachTrack": "ビーチへの道",
+        "garbageBin": "ゴミ箱",
+        "lifeSaverFlag": "旗",
+        "building": "建物",
+        "sandDunes": "砂丘",
+        "telegraphPole": "電柱",
+        "waveStart": "波の起点"
       },
       "break_short": {
         "right_hand": "ライト",
         "open": "オープン",
         "reef": "リーフ",
         "rivermouth": "河口"
-      }
-    }
+      },
+      "thickness_sm": "細",
+      "thickness_med": "中",
+      "thickness_lg": "太"
+    },
+    "demo_cta": "試してみてください — 動作デモです"
   },
   "features": {
     "eyebrow": "ビーチで使えるアプリ",
     "h2": "濡れた指、強い日差し、せっかちな自分のためにデザイン。",
     "lede": "ボードバッグを開けてからパドルアウトするまでの、駐車場でのその瞬間に合わせてチューニング。",
     "items": [
-      { "title": "スキルレーティング・チャート", "body": "最後のサーフと全体トレンドをホーム画面で確認。明日のパドルアウトを後押しするチャート。" },
-      { "title": "セッション・ライブラリ", "body": "ビーチ名と日付ごとにすべてのセッションを保存。過去のサーフをタップしてプラン、マップ、星をすぐに確認。" },
-      { "title": "セットタイマー", "body": "4本のセットが入った時にタップすると、平均間隔を算出。次の波が来る時に正しいポジションへ。" },
-      { "title": "2つの計画モード", "body": "コーチングが欲しい時は7質問のガイドフロー、波がもう見えている時は「I will…」のフリーフォーム・ノート。" },
-      { "title": "コーチングのささやき", "body": "押し付けではなく、さりげないヒント。アプリは1日目にループを教え、3日目には邪魔せず消える。" },
-      { "title": "オフラインファースト", "body": "砂丘で電波がない? Surf Readerは気にしません。すべて端末内保存。あなたのプランはクラウドではなくあなたと共に。" }
+      {
+        "title": "スキルレーティング・チャート",
+        "body": "最後のサーフと全体トレンドをホーム画面で確認。明日のパドルアウトを後押しするチャート。"
+      },
+      {
+        "title": "セッション・ライブラリ",
+        "body": "ビーチ名と日付ごとにすべてのセッションを保存。過去のサーフをタップしてプラン、マップ、星をすぐに確認。"
+      },
+      {
+        "title": "セットタイマー",
+        "body": "4本のセットが入った時にタップすると、平均間隔を算出。次の波が来る時に正しいポジションへ。"
+      },
+      {
+        "title": "2つの計画モード",
+        "body": "コーチングが欲しい時は7質問のガイドフロー、波がもう見えている時は「I will…」のフリーフォーム・ノート。"
+      },
+      {
+        "title": "コーチングのささやき",
+        "body": "押し付けではなく、さりげないヒント。アプリは1日目にループを教え、3日目には邪魔せず消える。"
+      },
+      {
+        "title": "オフラインファースト",
+        "body": "砂丘で電波がない? Surf Readerは気にしません。すべて端末内保存。あなたのプランはクラウドではなくあなたと共に。"
+      }
     ]
   },
   "review": {
@@ -169,20 +229,47 @@
     "author": "マーティン・ダン",
     "author_sub": "プロサーフコーチングの先駆者 · eSurfR.com 創設者",
     "stats": [
-      { "num_html": "<span>40+</span>", "label": "グロムからワールドツアーまで、サーファーを指導した年数。" },
-      { "num_html": "8", "label": "Surf Readerがマップ化できるブレイク種別。" },
-      { "num_html": "7", "label": "正直な採点のためにキャリブレートされた自己評価項目。" },
-      { "num_html": "<span>5</span>", "label": "ローンチ時の対応言語 — あなたの言葉でサーフコーチング。" }
+      {
+        "num_html": "<span>40+</span>",
+        "label": "グロムからワールドツアーまで、サーファーを指導した年数。"
+      },
+      {
+        "num_html": "8",
+        "label": "Surf Readerがマップ化できるブレイク種別。"
+      },
+      {
+        "num_html": "7",
+        "label": "正直な採点のためにキャリブレートされた自己評価項目。"
+      },
+      {
+        "num_html": "<span>5</span>",
+        "label": "ローンチ時の対応言語 — あなたの言葉でサーフコーチング。"
+      }
     ]
   },
   "langs_strip": {
     "eyebrow": "あなたの言葉でサーフ",
     "items": [
-      { "label": "English", "sub": "EN" },
-      { "label": "Español", "sub": "ES" },
-      { "label": "Português", "sub": "PT" },
-      { "label": "日本語", "sub": "JA" },
-      { "label": "Français", "sub": "FR" }
+      {
+        "label": "English",
+        "sub": "EN"
+      },
+      {
+        "label": "Español",
+        "sub": "ES"
+      },
+      {
+        "label": "Português",
+        "sub": "PT"
+      },
+      {
+        "label": "日本語",
+        "sub": "JA"
+      },
+      {
+        "label": "Français",
+        "sub": "FR"
+      }
     ]
   },
   "final": {

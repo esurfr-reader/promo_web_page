@@ -116,14 +116,22 @@
       if (!Array.isArray(arr)) return;
       host.innerHTML = "";
       arr.forEach((s, i) => {
-        const span = document.createElement("div");
-        span.textContent = s;
-        host.appendChild(span);
-        if (i < arr.length - 1) {
-          const dot = document.createElement("span");
-          dot.className = "dot";
-          host.appendChild(dot);
-        }
+        const code = SUPPORTED[i];
+        const chip = document.createElement("button");
+        chip.type = "button";
+        chip.className = "lang-chip-hero";
+        chip.setAttribute("data-lang", code || "");
+        const label = document.createElement("span");
+        label.className = "label";
+        label.textContent = s;
+        const sub = document.createElement("span");
+        sub.className = "sub";
+        sub.textContent = (code || "").toUpperCase();
+        chip.appendChild(label);
+        chip.appendChild(sub);
+        if (code && window.SR_I18N_LANG === code) chip.classList.add("active");
+        if (code) chip.addEventListener("click", () => loadLang(code));
+        host.appendChild(chip);
       });
     });
   }
@@ -162,12 +170,33 @@
       applyLangStrip(dict);
       applyBullets(dict);
       highlightLangButton(lang);
+      highlightBottomLangChips(lang);
       try { localStorage.setItem(STORAGE_KEY, lang); } catch (_) {}
       window.dispatchEvent(new CustomEvent("sr:lang-changed", { detail: { lang, dict } }));
     } catch (err) {
       console.error("[i18n] failed to load", lang, err);
       if (lang !== DEFAULT_LANG) loadLang(DEFAULT_LANG);
     }
+  }
+
+  function mountBottomLangChips() {
+    document.querySelectorAll(".langs .lang-chip").forEach((chip, i) => {
+      const code = SUPPORTED[i];
+      if (!code) return;
+      chip.setAttribute("data-lang", code);
+      chip.setAttribute("role", "button");
+      chip.setAttribute("tabindex", "0");
+      chip.addEventListener("click", () => loadLang(code));
+      chip.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); loadLang(code); }
+      });
+    });
+  }
+
+  function highlightBottomLangChips(lang) {
+    document.querySelectorAll(".langs .lang-chip[data-lang]").forEach((c) => {
+      c.classList.toggle("active", c.getAttribute("data-lang") === lang);
+    });
   }
 
   function mountLangPicker() {
@@ -195,6 +224,7 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     mountLangPicker();
+    mountBottomLangChips();
     loadLang(pickInitialLang());
   });
 

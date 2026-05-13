@@ -23,11 +23,21 @@
     "cta_primary": "Obtener Surf Reader",
     "cta_secondary": "Ver cómo funciona",
     "meta_lead": "Usa la app y aprende a elegir mejores olas en 5 idiomas",
-    "lang_strip": ["English", "Español", "Português", "日本語", "Français"]
+    "lang_strip": [
+      "English",
+      "Español",
+      "Português",
+      "日本語",
+      "Français"
+    ]
   },
   "trust": {
     "label": "Basado en el coaching de Martin Dunn de",
-    "brands": ["eSurfR.com", "MartinDunn.com.au", "Martin Dunn Surf Camps"]
+    "brands": [
+      "eSurfR.com",
+      "MartinDunn.com.au",
+      "Martin Dunn Surf Camps"
+    ]
   },
   "problem": {
     "eyebrow": "¿Por qué los surfistas se estancan?",
@@ -76,16 +86,40 @@
   "canvas": {
     "eyebrow": "El lienzo del mapa de playa",
     "h2": "Ocho tipos de pico. Tu mano. Un toque para planear.",
-    "lede": "El lienzo es el corazón de Surf Reader — una superficie de dibujo táctil, apta para guantes, diseñada para dedos mojados y sol radiante. Pruébalo.",
+    "lede": "El lienzo es el corazón de Surf Reader — una superficie de dibujo táctil, apta para guantes, diseñada para dedos mojados y sol radiante.",
     "breaks": [
-      { "id": "open", "label": "Playa abierta" },
-      { "id": "right_hand", "label": "Derecha" },
-      { "id": "left_hand", "label": "Izquierda" },
-      { "id": "reef", "label": "Arrecife" },
-      { "id": "outer_reef", "label": "Arrecife exterior" },
-      { "id": "rivermouth", "label": "Desembocadura" },
-      { "id": "pier", "label": "Embarcadero" },
-      { "id": "jetty", "label": "Espigón" }
+      {
+        "id": "open",
+        "label": "Playa abierta"
+      },
+      {
+        "id": "right_hand",
+        "label": "Derecha"
+      },
+      {
+        "id": "left_hand",
+        "label": "Izquierda"
+      },
+      {
+        "id": "reef",
+        "label": "Arrecife"
+      },
+      {
+        "id": "outer_reef",
+        "label": "Arrecife exterior"
+      },
+      {
+        "id": "rivermouth",
+        "label": "Desembocadura"
+      },
+      {
+        "id": "pier",
+        "label": "Embarcadero"
+      },
+      {
+        "id": "jetty",
+        "label": "Espigón"
+      }
     ],
     "demo": {
       "session_title": "Whale Beach",
@@ -106,35 +140,61 @@
       "hint_done": "Buena pinta. Cambia a \"Herramientas\" para borrar o seguir.",
       "hint_cleared": "Borrado. Toca un icono para empezar.",
       "icon_labels": {
-        "me": "Surfista",
+        "me": "Yo",
         "house": "Casa",
         "tree": "Árbol",
+        "lifeSaving": "Salvavidas",
         "rocks": "Rocas",
-        "tower": "Torre socorrista",
-        "flag": "Bandera",
-        "track": "Sendero",
-        "park": "Aparcamiento",
-        "building": "Edificio"
+        "carpark": "Aparcamiento",
+        "beachTrack": "Acceso a la playa",
+        "garbageBin": "Papelera",
+        "lifeSaverFlag": "Bandera",
+        "building": "Edificio",
+        "sandDunes": "Dunas",
+        "telegraphPole": "Poste",
+        "waveStart": "Inicio de ola"
       },
       "break_short": {
         "right_hand": "Dcha",
         "open": "Abierta",
         "reef": "Reef",
         "rivermouth": "Río"
-      }
-    }
+      },
+      "thickness_sm": "Peq",
+      "thickness_med": "Med",
+      "thickness_lg": "Grd"
+    },
+    "demo_cta": "Pruébalo — esta es una demo funcional"
   },
   "features": {
     "eyebrow": "Hecho para la playa",
     "h2": "Diseñado para dedos mojados, sol fuerte y cero paciencia.",
     "lede": "Cada detalle pensado para ese momento en el aparcamiento entre abrir la funda y remar.",
     "items": [
-      { "title": "Gráfica de nota", "body": "Tu última sesión y tu tendencia general, en la pantalla principal. La gráfica que motiva la remada de mañana." },
-      { "title": "Biblioteca de sesiones", "body": "Cada sesión guardada por playa y fecha. Toca cualquier surf pasado para leer tu plan, ver el mapa y las estrellas." },
-      { "title": "Cronómetro de sets", "body": "Toca cuando lleguen cuatro sets — Surf Reader te da el intervalo medio para estar bien colocado cuando llegue el siguiente." },
-      { "title": "Dos modos de planificación", "body": "Flujo guiado de 7 preguntas cuando quieras coaching, o notas libres \"voy a…\" cuando ya conoces la ola." },
-      { "title": "Susurros de coaching", "body": "Apuntes sutiles, nunca sermones. La app enseña el bucle el primer día y desaparece al tercero — sin estorbar." },
-      { "title": "Funciona sin conexión", "body": "¿Sin cobertura en las dunas? A Surf Reader le da igual. Todo en el dispositivo. Tus planes van contigo, no a la nube." }
+      {
+        "title": "Gráfica de nota",
+        "body": "Tu última sesión y tu tendencia general, en la pantalla principal. La gráfica que motiva la remada de mañana."
+      },
+      {
+        "title": "Biblioteca de sesiones",
+        "body": "Cada sesión guardada por playa y fecha. Toca cualquier surf pasado para leer tu plan, ver el mapa y las estrellas."
+      },
+      {
+        "title": "Cronómetro de sets",
+        "body": "Toca cuando lleguen cuatro sets — Surf Reader te da el intervalo medio para estar bien colocado cuando llegue el siguiente."
+      },
+      {
+        "title": "Dos modos de planificación",
+        "body": "Flujo guiado de 7 preguntas cuando quieras coaching, o notas libres \"voy a…\" cuando ya conoces la ola."
+      },
+      {
+        "title": "Susurros de coaching",
+        "body": "Apuntes sutiles, nunca sermones. La app enseña el bucle el primer día y desaparece al tercero — sin estorbar."
+      },
+      {
+        "title": "Funciona sin conexión",
+        "body": "¿Sin cobertura en las dunas? A Surf Reader le da igual. Todo en el dispositivo. Tus planes van contigo, no a la nube."
+      }
     ]
   },
   "review": {
@@ -169,20 +229,47 @@
     "author": "Martin Dunn",
     "author_sub": "Pionero del coaching de surf profesional · Fundador, eSurfR.com",
     "stats": [
-      { "num_html": "<span>40+</span>", "label": "Años entrenando surfistas, del grommet al tour mundial." },
-      { "num_html": "8", "label": "Tipos de pico que Surf Reader sabe mapear." },
-      { "num_html": "7", "label": "Criterios de autoevaluación, calibrados para puntuar honestamente." },
-      { "num_html": "<span>5</span>", "label": "Idiomas al lanzamiento — coaching de surf en tu idioma." }
+      {
+        "num_html": "<span>40+</span>",
+        "label": "Años entrenando surfistas, del grommet al tour mundial."
+      },
+      {
+        "num_html": "8",
+        "label": "Tipos de pico que Surf Reader sabe mapear."
+      },
+      {
+        "num_html": "7",
+        "label": "Criterios de autoevaluación, calibrados para puntuar honestamente."
+      },
+      {
+        "num_html": "<span>5</span>",
+        "label": "Idiomas al lanzamiento — coaching de surf en tu idioma."
+      }
     ]
   },
   "langs_strip": {
     "eyebrow": "Surfea en tu idioma",
     "items": [
-      { "label": "English", "sub": "EN" },
-      { "label": "Español", "sub": "ES" },
-      { "label": "Português", "sub": "PT" },
-      { "label": "日本語", "sub": "JA" },
-      { "label": "Français", "sub": "FR" }
+      {
+        "label": "English",
+        "sub": "EN"
+      },
+      {
+        "label": "Español",
+        "sub": "ES"
+      },
+      {
+        "label": "Português",
+        "sub": "PT"
+      },
+      {
+        "label": "日本語",
+        "sub": "JA"
+      },
+      {
+        "label": "Français",
+        "sub": "FR"
+      }
     ]
   },
   "final": {

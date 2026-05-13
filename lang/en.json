@@ -23,11 +23,21 @@
     "cta_primary": "Get Surf Reader",
     "cta_secondary": "See how it works",
     "meta_lead": "Use the app and learn better wave selection in 5 languages",
-    "lang_strip": ["English", "Español", "Português", "日本語", "Français"]
+    "lang_strip": [
+      "English",
+      "Español",
+      "Português",
+      "日本語",
+      "Français"
+    ]
   },
   "trust": {
     "label": "Built on Martin Dunn's coaching from",
-    "brands": ["eSurfR.com", "MartinDunn.com.au", "Martin Dunn Surf Camps"]
+    "brands": [
+      "eSurfR.com",
+      "MartinDunn.com.au",
+      "Martin Dunn Surf Camps"
+    ]
   },
   "problem": {
     "eyebrow": "Why surfers plateau?",
@@ -76,16 +86,40 @@
   "canvas": {
     "eyebrow": "The beach map canvas",
     "h2": "Eight break types. Your hand. One tap to plan.",
-    "lede": "The canvas is the heart of Surf Reader — a touch-first, glove-friendly drawing surface designed for wet fingers and bright sunlight. Try it.",
+    "lede": "The canvas is the heart of Surf Reader — a touch-first, glove-friendly drawing surface designed for wet fingers and bright sunlight.",
     "breaks": [
-      { "id": "open", "label": "Open Beach" },
-      { "id": "right_hand", "label": "Right Point" },
-      { "id": "left_hand", "label": "Left Point" },
-      { "id": "reef", "label": "Beach Reef" },
-      { "id": "outer_reef", "label": "Outer Reef" },
-      { "id": "rivermouth", "label": "Rivermouth" },
-      { "id": "pier", "label": "Beach Pier" },
-      { "id": "jetty", "label": "Breakwall" }
+      {
+        "id": "open",
+        "label": "Open Beach"
+      },
+      {
+        "id": "right_hand",
+        "label": "Right Point"
+      },
+      {
+        "id": "left_hand",
+        "label": "Left Point"
+      },
+      {
+        "id": "reef",
+        "label": "Beach Reef"
+      },
+      {
+        "id": "outer_reef",
+        "label": "Outer Reef"
+      },
+      {
+        "id": "rivermouth",
+        "label": "Rivermouth"
+      },
+      {
+        "id": "pier",
+        "label": "Beach Pier"
+      },
+      {
+        "id": "jetty",
+        "label": "Breakwall"
+      }
     ],
     "demo": {
       "session_title": "Whale Beach",
@@ -106,35 +140,61 @@
       "hint_done": "Looking good. Switch to \"Tools\" to clear or move on.",
       "hint_cleared": "Cleared. Tap an icon to start placing.",
       "icon_labels": {
-        "me": "Surfer",
+        "me": "Me",
         "house": "House",
         "tree": "Tree",
+        "lifeSaving": "Life-saving",
         "rocks": "Rocks",
-        "tower": "Lifesaver tower",
-        "flag": "Flag",
-        "track": "Walking track",
-        "park": "Car park",
-        "building": "Building"
+        "carpark": "Carpark",
+        "beachTrack": "Beach access",
+        "garbageBin": "Bin",
+        "lifeSaverFlag": "Flag",
+        "building": "Building",
+        "sandDunes": "Sand Dunes",
+        "telegraphPole": "Pole",
+        "waveStart": "Wave Start"
       },
       "break_short": {
         "right_hand": "Right",
         "open": "Open",
         "reef": "Reef",
         "rivermouth": "River"
-      }
-    }
+      },
+      "thickness_sm": "Sm",
+      "thickness_med": "Med",
+      "thickness_lg": "Lg"
+    },
+    "demo_cta": "Give it a try — this is a working demo"
   },
   "features": {
     "eyebrow": "Built for the beach",
     "h2": "Designed for wet fingers, bright sun and zero patience.",
     "lede": "Every detail tuned for the parking-lot moment between unzipping your boardbag and paddling out.",
     "items": [
-      { "title": "Skill Rating chart", "body": "Your last surf and your overall trend, on the home screen. The chart that motivates the paddle out tomorrow." },
-      { "title": "Session library", "body": "Every session saved by beach name and date. Tap any past surf to read your plan, see the map and the stars." },
-      { "title": "Set Timer", "body": "Tap as four sets roll in — Surf Reader gives you the average interval so you can be in position when the next one arrives." },
-      { "title": "Two planning modes", "body": "Guided 7-question flow when you want coaching, or freeform \"I will…\" notes when you already know the wave." },
-      { "title": "Coaching whispers", "body": "Subtle prompts, never lectures. The app teaches the loop on day one and disappears by day three — out of your way." },
-      { "title": "Offline-first", "body": "No reception in the dunes? Surf Reader doesn't care. Everything stored on-device. Your plans go with you, not to a cloud." }
+      {
+        "title": "Skill Rating chart",
+        "body": "Your last surf and your overall trend, on the home screen. The chart that motivates the paddle out tomorrow."
+      },
+      {
+        "title": "Session library",
+        "body": "Every session saved by beach name and date. Tap any past surf to read your plan, see the map and the stars."
+      },
+      {
+        "title": "Set Timer",
+        "body": "Tap as four sets roll in — Surf Reader gives you the average interval so you can be in position when the next one arrives."
+      },
+      {
+        "title": "Two planning modes",
+        "body": "Guided 7-question flow when you want coaching, or freeform \"I will…\" notes when you already know the wave."
+      },
+      {
+        "title": "Coaching whispers",
+        "body": "Subtle prompts, never lectures. The app teaches the loop on day one and disappears by day three — out of your way."
+      },
+      {
+        "title": "Offline-first",
+        "body": "No reception in the dunes? Surf Reader doesn't care. Everything stored on-device. Your plans go with you, not to a cloud."
+      }
     ]
   },
   "review": {
@@ -169,20 +229,47 @@
     "author": "Martin Dunn",
     "author_sub": "Pioneer of professional surf coaching · Founder, eSurfR.com",
     "stats": [
-      { "num_html": "<span>40+</span>", "label": "Years coaching surfers from grom to world tour." },
-      { "num_html": "8", "label": "Break types Surf Reader knows how to map." },
-      { "num_html": "7", "label": "Self-assessment criteria, calibrated for honest rating." },
-      { "num_html": "<span>5</span>", "label": "Languages at launch — surf coaching, your tongue." }
+      {
+        "num_html": "<span>40+</span>",
+        "label": "Years coaching surfers from grom to world tour."
+      },
+      {
+        "num_html": "8",
+        "label": "Break types Surf Reader knows how to map."
+      },
+      {
+        "num_html": "7",
+        "label": "Self-assessment criteria, calibrated for honest rating."
+      },
+      {
+        "num_html": "<span>5</span>",
+        "label": "Languages at launch — surf coaching, your tongue."
+      }
     ]
   },
   "langs_strip": {
     "eyebrow": "Surf, in your language",
     "items": [
-      { "label": "English", "sub": "EN" },
-      { "label": "Español", "sub": "ES" },
-      { "label": "Português", "sub": "PT" },
-      { "label": "日本語", "sub": "JA" },
-      { "label": "Français", "sub": "FR" }
+      {
+        "label": "English",
+        "sub": "EN"
+      },
+      {
+        "label": "Español",
+        "sub": "ES"
+      },
+      {
+        "label": "Português",
+        "sub": "PT"
+      },
+      {
+        "label": "日本語",
+        "sub": "JA"
+      },
+      {
+        "label": "Français",
+        "sub": "FR"
+      }
     ]
   },
   "final": {

@@ -23,11 +23,21 @@
     "cta_primary": "Obtenir Surf Reader",
     "cta_secondary": "Voir comment ça marche",
     "meta_lead": "Utilise l'app et améliore ta sélection de vagues en 5 langues",
-    "lang_strip": ["English", "Español", "Português", "日本語", "Français"]
+    "lang_strip": [
+      "English",
+      "Español",
+      "Português",
+      "日本語",
+      "Français"
+    ]
   },
   "trust": {
     "label": "Sur les bases du coaching de Martin Dunn chez",
-    "brands": ["eSurfR.com", "MartinDunn.com.au", "Martin Dunn Surf Camps"]
+    "brands": [
+      "eSurfR.com",
+      "MartinDunn.com.au",
+      "Martin Dunn Surf Camps"
+    ]
   },
   "problem": {
     "eyebrow": "Pourquoi les surfeurs stagnent ?",
@@ -76,16 +86,40 @@
   "canvas": {
     "eyebrow": "La toile carte de spot",
     "h2": "Huit types de spot. Ta main. Un toucher pour planifier.",
-    "lede": "La toile est le cœur de Surf Reader — une surface de dessin tactile, compatible gants, conçue pour doigts mouillés et soleil cru. Essaie.",
+    "lede": "La toile est le cœur de Surf Reader — une surface de dessin tactile, compatible gants, conçue pour doigts mouillés et soleil cru.",
     "breaks": [
-      { "id": "open", "label": "Plage ouverte" },
-      { "id": "right_hand", "label": "Droite" },
-      { "id": "left_hand", "label": "Gauche" },
-      { "id": "reef", "label": "Récif" },
-      { "id": "outer_reef", "label": "Récif extérieur" },
-      { "id": "rivermouth", "label": "Embouchure" },
-      { "id": "pier", "label": "Jetée" },
-      { "id": "jetty", "label": "Digue" }
+      {
+        "id": "open",
+        "label": "Plage ouverte"
+      },
+      {
+        "id": "right_hand",
+        "label": "Droite"
+      },
+      {
+        "id": "left_hand",
+        "label": "Gauche"
+      },
+      {
+        "id": "reef",
+        "label": "Récif"
+      },
+      {
+        "id": "outer_reef",
+        "label": "Récif extérieur"
+      },
+      {
+        "id": "rivermouth",
+        "label": "Embouchure"
+      },
+      {
+        "id": "pier",
+        "label": "Jetée"
+      },
+      {
+        "id": "jetty",
+        "label": "Digue"
+      }
     ],
     "demo": {
       "session_title": "Whale Beach",
@@ -94,7 +128,7 @@
       "mode_draw": "Dessiner",
       "mode_tools": "Outils",
       "draw_wave": "Vague",
-      "draw_rip": "Baïne",
+      "draw_rip": "Courant",
       "draw_freehand": "Libre",
       "undo": "Annuler",
       "clear": "Tout effacer",
@@ -106,35 +140,61 @@
       "hint_done": "Joli. Passe à « Outils » pour effacer ou continuer.",
       "hint_cleared": "Effacé. Touche une icône pour commencer.",
       "icon_labels": {
-        "me": "Surfeur",
+        "me": "Moi",
         "house": "Maison",
         "tree": "Arbre",
+        "lifeSaving": "Sauvetage",
         "rocks": "Rochers",
-        "tower": "Tour sauveteurs",
-        "flag": "Drapeau",
-        "track": "Sentier",
-        "park": "Parking",
-        "building": "Bâtiment"
+        "carpark": "Parking",
+        "beachTrack": "Accès à la plage",
+        "garbageBin": "Poubelle",
+        "lifeSaverFlag": "Drapeau",
+        "building": "Bâtiment",
+        "sandDunes": "Dunes",
+        "telegraphPole": "Poteau",
+        "waveStart": "Début de vague"
       },
       "break_short": {
         "right_hand": "Droite",
         "open": "Ouverte",
         "reef": "Récif",
         "rivermouth": "Embouchure"
-      }
-    }
+      },
+      "thickness_sm": "Fin",
+      "thickness_med": "Moy",
+      "thickness_lg": "Épais"
+    },
+    "demo_cta": "Essayez — ceci est une démo fonctionnelle"
   },
   "features": {
     "eyebrow": "Pensée pour la plage",
     "h2": "Conçue pour doigts mouillés, soleil cru et zéro patience.",
     "lede": "Chaque détail calé sur le moment du parking entre la housse ouverte et la rame.",
     "items": [
-      { "title": "Graphique de niveau", "body": "Ta dernière session et ta tendance globale, sur l'écran d'accueil. Le graphe qui motive la rame de demain." },
-      { "title": "Bibliothèque de sessions", "body": "Chaque session enregistrée par spot et date. Touche un surf passé pour relire ton plan, voir la carte et les étoiles." },
-      { "title": "Chrono de séries", "body": "Touche à l'arrivée de quatre séries — Surf Reader te donne l'intervalle moyen pour être bien placé à la prochaine." },
-      { "title": "Deux modes de plan", "body": "Flux guidé en 7 questions pour du coaching, ou notes libres « je vais… » quand tu connais déjà la vague." },
-      { "title": "Murmures de coach", "body": "Indices discrets, jamais de leçon. L'app enseigne la boucle le jour 1 et disparaît au jour 3 — sans gêner." },
-      { "title": "Offline-first", "body": "Pas de réseau dans les dunes ? Surf Reader s'en fiche. Tout reste sur l'appareil. Tes plans partent avec toi, pas dans le cloud." }
+      {
+        "title": "Graphique de niveau",
+        "body": "Ta dernière session et ta tendance globale, sur l'écran d'accueil. Le graphe qui motive la rame de demain."
+      },
+      {
+        "title": "Bibliothèque de sessions",
+        "body": "Chaque session enregistrée par spot et date. Touche un surf passé pour relire ton plan, voir la carte et les étoiles."
+      },
+      {
+        "title": "Chrono de séries",
+        "body": "Touche à l'arrivée de quatre séries — Surf Reader te donne l'intervalle moyen pour être bien placé à la prochaine."
+      },
+      {
+        "title": "Deux modes de plan",
+        "body": "Flux guidé en 7 questions pour du coaching, ou notes libres « je vais… » quand tu connais déjà la vague."
+      },
+      {
+        "title": "Murmures de coach",
+        "body": "Indices discrets, jamais de leçon. L'app enseigne la boucle le jour 1 et disparaît au jour 3 — sans gêner."
+      },
+      {
+        "title": "Offline-first",
+        "body": "Pas de réseau dans les dunes ? Surf Reader s'en fiche. Tout reste sur l'appareil. Tes plans partent avec toi, pas dans le cloud."
+      }
     ]
   },
   "review": {
@@ -169,20 +229,47 @@
     "author": "Martin Dunn",
     "author_sub": "Pionnier du coaching surf professionnel · Fondateur, eSurfR.com",
     "stats": [
-      { "num_html": "<span>40+</span>", "label": "Années à coacher des surfeurs, du grommet au tour mondial." },
-      { "num_html": "8", "label": "Types de spot que Surf Reader sait cartographier." },
-      { "num_html": "7", "label": "Critères d'auto-évaluation, calibrés pour la franchise." },
-      { "num_html": "<span>5</span>", "label": "Langues au lancement — coaching surf dans ta langue." }
+      {
+        "num_html": "<span>40+</span>",
+        "label": "Années à coacher des surfeurs, du grommet au tour mondial."
+      },
+      {
+        "num_html": "8",
+        "label": "Types de spot que Surf Reader sait cartographier."
+      },
+      {
+        "num_html": "7",
+        "label": "Critères d'auto-évaluation, calibrés pour la franchise."
+      },
+      {
+        "num_html": "<span>5</span>",
+        "label": "Langues au lancement — coaching surf dans ta langue."
+      }
     ]
   },
   "langs_strip": {
     "eyebrow": "Surfe dans ta langue",
     "items": [
-      { "label": "English", "sub": "EN" },
-      { "label": "Español", "sub": "ES" },
-      { "label": "Português", "sub": "PT" },
-      { "label": "日本語", "sub": "JA" },
-      { "label": "Français", "sub": "FR" }
+      {
+        "label": "English",
+        "sub": "EN"
+      },
+      {
+        "label": "Español",
+        "sub": "ES"
+      },
+      {
+        "label": "Português",
+        "sub": "PT"
+      },
+      {
+        "label": "日本語",
+        "sub": "JA"
+      },
+      {
+        "label": "Français",
+        "sub": "FR"
+      }
     ]
   },
   "final": {

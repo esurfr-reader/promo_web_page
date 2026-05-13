@@ -6,33 +6,12 @@
 <title data-i18n="doc.title">Surf Reader — Read the surf. Plan your session. Reflect after.</title>
 <link rel="icon" type="image/png" href="assets/logo_mark.png" />
 
-<!-- Default Google-hosted Fraunces + Inter so first paint matches the design.
-     The font-picker overrides --display / --sans live once the client picks
-     a different local font. -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<!-- Locked font pair: Exo (display) + Iosevka Charon Mono (body).
+     Loaded as @font-face from /fonts/ (see css/styles.css). -->
 
 <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-
-<!-- ============ TEMPORARY FONT PICKER (top-left) ============
-     Removable: delete this <aside> + the font-picker.js script tag
-     once the client has locked in the font pair. -->
-<aside id="fontPicker" class="font-picker" data-collapsed="false" aria-label="Font picker">
-  <div class="font-picker-header">
-    <span data-i18n="picker.header">Font picker (temp)</span>
-    <button id="fontPickerToggle" type="button" aria-label="Collapse">—</button>
-  </div>
-  <div class="font-picker-body">
-    <label for="fontPickerTitle" data-i18n="picker.title_font_label">Title font</label>
-    <select id="fontPickerTitle" aria-label="Title font"></select>
-    <label for="fontPickerSub" data-i18n="picker.subtitle_font_label">Subtitle font</label>
-    <select id="fontPickerSub" aria-label="Subtitle font"></select>
-    <div id="fontPickerStatus" class="status" data-i18n="picker.status_loading">Loading font catalogue…</div>
-  </div>
-</aside>
 
 <!-- ============ LANGUAGE PICKER (top-right) ============ -->
 <nav id="langPicker" class="lang-picker" aria-label="Site language"></nav>
@@ -58,15 +37,15 @@
 
 <!-- ============ HERO ============ -->
 <section id="top" class="hero">
-  <div class="hero-sun"></div>
   <svg class="hero-wave-bg" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0,160 C240,40 480,200 720,140 C960,80 1200,180 1440,100 L1440,220 L0,220 Z" fill="url(#g1)" />
     <defs>
       <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
-        <stop offset="0%" stop-color="#6dd5ed" />
-        <stop offset="100%" stop-color="#2193b0" />
+        <stop offset="0%" stop-color="#90e0ef" />
+        <stop offset="55%" stop-color="#00b4d8" />
+        <stop offset="100%" stop-color="#0077b6" />
       </linearGradient>
     </defs>
+    <path d="M0,160 C240,40 480,200 720,140 C960,80 1200,180 1440,100 L1440,220 L0,220 Z" fill="url(#g1)" />
   </svg>
 
   <div class="wrap hero-grid" style="position: relative; z-index: 2;">
@@ -102,10 +81,10 @@
     <div class="hero-visual" aria-hidden="true">
       <div class="phone">
         <div class="phone-screen">
-          <img src="assets/app_home.png"
+          <img src="assets/app_home.png?v=1778635394"
                alt="Surf Reader app home screen — TODO swap with current build screenshot"
                data-img-role="hero-app-screenshot"
-               style="width:100%;height:100%;object-fit:cover;display:block;" />
+               style="width:100%;height:100%;object-fit:cover;display:block;background:#000;" />
         </div>
       </div>
     </div>
@@ -115,9 +94,9 @@
   <div class="wrap" style="position: relative; z-index: 2; margin-top: 96px; padding-bottom: 40px;">
     <div style="display: flex; align-items: center; justify-content: center; gap: 36px; flex-wrap: wrap; opacity: .7;">
       <span style="font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-2); font-weight: 700;" data-i18n="trust.label">Built on Martin Dunn's coaching from</span>
-      <span style="font-family: var(--display); font-size: 18px; font-weight: 600; color: var(--navy);">eSurfR.com</span>
-      <span style="font-family: var(--display); font-size: 18px; font-weight: 600; color: var(--navy);">MartinDunn.com.au</span>
-      <span style="font-family: var(--display); font-size: 18px; font-weight: 600; color: var(--navy);">Martin Dunn Surf Camps</span>
+      <a href="https://www.esurfr.com/" target="_blank" rel="noopener" style="font-family: var(--display); font-size: 18px; font-weight: 600; color: var(--navy); text-decoration: none;">eSurfR.com</a>
+      <a href="https://martindunn.com.au/" target="_blank" rel="noopener" style="font-family: var(--display); font-size: 18px; font-weight: 600; color: var(--navy); text-decoration: none;">MartinDunn.com.au</a>
+      <a href="https://www.martindunnsurfcamps.com.au/" target="_blank" rel="noopener" style="font-family: var(--display); font-size: 18px; font-weight: 600; color: var(--navy); text-decoration: none;">Martin Dunn Surf Camps</a>
     </div>
   </div>
 </section>
@@ -197,7 +176,8 @@
     <div class="section-head">
       <span class="eyebrow" data-i18n="canvas.eyebrow">The beach map canvas</span>
       <h2 class="display" data-i18n="canvas.h2">Eight break types. Your hand. One tap to plan.</h2>
-      <p data-i18n="canvas.lede">The canvas is the heart of Surf Reader — a touch-first, glove-friendly drawing surface designed for wet fingers and bright sunlight. Try it.</p>
+      <p data-i18n="canvas.lede">The canvas is the heart of Surf Reader — a touch-first, glove-friendly drawing surface designed for wet fingers and bright sunlight.</p>
+      <p class="canvas-demo-cta" data-i18n="canvas.demo_cta">Give it a try — this is a working demo</p>
     </div>
 
     <div id="canvasDemo"></div>
@@ -205,8 +185,8 @@
     <!-- TODO swap break-aerial photos with real-app screenshots when available -->
     <div class="break-row" style="margin-top: 60px;">
       <div class="break"><img src="assets/beach_open.png"        alt="Open beach aerial"        data-img-role="break-open"        /><div class="label" data-i18n="canvas.breaks.0.label">Open Beach</div></div>
-      <div class="break"><img src="assets/beach_right_hand.png"  alt="Right-hand point aerial" data-img-role="break-right_hand"  /><div class="label" data-i18n="canvas.breaks.1.label">Right Point</div></div>
       <div class="break"><img src="assets/beach_left_hand.png"   alt="Left-hand point aerial"  data-img-role="break-left_hand"   /><div class="label" data-i18n="canvas.breaks.2.label">Left Point</div></div>
+      <div class="break"><img src="assets/beach_right_hand.png"  alt="Right-hand point aerial" data-img-role="break-right_hand"  /><div class="label" data-i18n="canvas.breaks.1.label">Right Point</div></div>
       <div class="break"><img src="assets/beach_reef.png"        alt="Beach reef aerial"       data-img-role="break-reef"        /><div class="label" data-i18n="canvas.breaks.3.label">Beach Reef</div></div>
       <div class="break"><img src="assets/beach_outer_reef.png"  alt="Outer reef aerial"       data-img-role="break-outer_reef"  /><div class="label" data-i18n="canvas.breaks.4.label">Outer Reef</div></div>
       <div class="break"><img src="assets/beach_river_mouth.png" alt="Rivermouth aerial"       data-img-role="break-rivermouth"  /><div class="label" data-i18n="canvas.breaks.5.label">Rivermouth</div></div>
@@ -364,11 +344,18 @@
     <p data-i18n="final.lede">Surf Reader is free to download, free to use, and built by surfers, for surfers — wherever you paddle out.</p>
     <div class="actions">
       <a href="#" class="store-btn" data-img-role="cta-app-store">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.3c0-2.7 2.2-4 2.3-4-1.3-1.8-3.2-2.1-3.9-2.1-1.7-.2-3.2 1-4 1-.9 0-2.1-1-3.5-1-1.8 0-3.4 1-4.3 2.6-1.9 3.2-.5 8 1.3 10.6.9 1.3 2 2.7 3.4 2.7 1.4-.1 1.9-.9 3.5-.9s2 .9 3.5.8c1.4 0 2.4-1.3 3.3-2.6 1-1.5 1.4-2.9 1.4-3-..-.1-2.7-.7-2.7-2.1zM13.6 4.5c.7-.9 1.3-2.1 1.1-3.3-1.1.1-2.4.7-3.1 1.6-.7.8-1.3 2.1-1.1 3.2 1.2.1 2.4-.6 3.1-1.5z"/></svg>
+        <svg width="44" height="44" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#ffffff" d="M17.05 20.28c-.98.95-2.05.86-3.08.38-1.07-.49-2.07-.51-3.2 0-1.39.59-2.13.41-3-.38C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+        </svg>
         <span><span class="small" data-i18n="final.app_store_small">Download on the</span><span class="big" data-i18n="final.app_store_big">App Store</span></span>
       </a>
       <a href="#" class="store-btn" data-img-role="cta-google-play">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3c-.4.4-.6 1.1-.6 1.9v15.6c0 .9.2 1.5.6 1.9l.1.1L13 12l-9.4-9.7zM17 15.4l-3.4-3.4 3.4-3.4 3.7 2.1c1.1.6 1.1 1.6 0 2.2L17 15.4zM4 22c.3.3.7.4 1.2.4.3 0 .7-.1 1-.3l11-6.3-3.6-3.6L4 22zM5.2 1.6c-.5 0-.9.1-1.2.3l9.6 9.5L17.2 8 6.2 1.9c-.4-.2-.7-.3-1-.3z"/></svg>
+        <svg width="44" height="44" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#00C0FF" d="M3.609 1.814 13.792 12 3.61 22.186c-.404-.207-.609-.598-.609-1.186V3c0-.588.205-.979.609-1.186z"/>
+          <path fill="#1AB0F2" d="M13.792 12 16.71 9.082 3.609 1.814 13.792 12z"/>
+          <path fill="#FF3F3F" d="M13.792 12 3.609 22.186 16.71 14.918 13.792 12z"/>
+          <path fill="#FFC107" d="M20.16 10.86 16.71 9.082 13.792 12l2.918 2.918 3.45-1.778c1.052-.65 1.052-1.63 0-2.28z"/>
+        </svg>
         <span><span class="small" data-i18n="final.google_play_small">Get it on</span><span class="big" data-i18n="final.google_play_big">Google Play</span></span>
       </a>
     </div>
@@ -389,9 +376,8 @@
 </footer>
 
 <!-- ============ SCRIPTS ============ -->
-<!-- i18n + font picker (vanilla) -->
-<script src="js/i18n.js"></script>
-<script src="js/font-picker.js"></script>
+<!-- i18n (vanilla) -->
+<script src="js/i18n.js?v=4"></script>
 
 <!-- React + Babel for interactive widgets (canvas + review demos + flow visuals) -->
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
