@@ -414,11 +414,6 @@ function CanvasDemo() {
           )}
         </div>
 
-        <div className="right">
-          <button className="tbtn" style={{background:'#F08A2A',color:'white'}}>
-            {tPath("canvas.demo.plan", "Plan →")}
-          </button>
-        </div>
       </div>
     </div>
   );
