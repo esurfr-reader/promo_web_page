@@ -5,6 +5,11 @@
     "code": "FR",
     "status": "draft - needs native review"
   },
+  "images": {
+    "app_home": "assets/i18n/fr/app_home.png",
+    "plan_shot": "assets/i18n/fr/plan_shot.png",
+    "review_panel": "assets/i18n/fr/review_panel.png"
+  },
   "doc": {
     "title": "Surf Reader — Lis la mer. Planifie ta session. Réfléchis après.",
     "html_lang": "fr"

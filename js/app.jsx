@@ -69,11 +69,14 @@ function Flow1Map() {
 function Flow2Plan() {
   useLangBump();
   const alt = tPath("how.cards.1.step", "Guided plan · 7 questions");
+  const src = tPath("images.plan_shot", "assets/i18n/en/plan_shot.png");
+  const fallback = "assets/i18n/en/plan_shot.png";
   return (
     <div style={{position:'absolute',inset:0,background:'#000'}}>
-      <img src="assets/plan_shot.png?v=1778635988"
+      <img src={src}
            alt={alt + ' — Surf Reader guided plan screen'}
            data-img-role="flow-plan-bg"
+           onError={(e)=>{ if(e.currentTarget.src.indexOf(fallback)===-1){ e.currentTarget.src = fallback; } }}
            style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',display:'block'}}/>
     </div>
   );
@@ -82,11 +85,14 @@ function Flow2Plan() {
 function Flow3Review() {
   useLangBump();
   const alt = tPath("review.eyebrow", "Post-surf review");
+  const src = tPath("images.review_panel", "assets/i18n/en/review_panel.png");
+  const fallback = "assets/i18n/en/review_panel.png";
   return (
     <div style={{position:'absolute',inset:0,background:'#000'}}>
-      <img src="assets/review_panel.png?v=1778635773"
+      <img src={src}
            alt={alt + ' — Surf Reader review panel'}
            data-img-role="flow-review-bg"
+           onError={(e)=>{ if(e.currentTarget.src.indexOf(fallback)===-1){ e.currentTarget.src = fallback; } }}
            style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'contain',display:'block'}}/>
     </div>
   );

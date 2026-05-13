@@ -5,6 +5,11 @@
     "code": "PT",
     "status": "draft - needs native review"
   },
+  "images": {
+    "app_home": "assets/i18n/pt/app_home.png",
+    "plan_shot": "assets/i18n/pt/plan_shot.png",
+    "review_panel": "assets/i18n/pt/review_panel.png"
+  },
   "doc": {
     "title": "Surf Reader — Leia o mar. Planeie a sessão. Reflita depois.",
     "html_lang": "pt"
