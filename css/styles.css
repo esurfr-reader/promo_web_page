@@ -381,6 +381,12 @@ button { font-family: inherit; }
 /* ---------- sections ---------- */
 section { position: relative; }
 .section { padding: 110px 0; }
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line-strong), transparent);
+  margin: 0;
+}
 .section-head {
   max-width: 720px;
   margin: 0 auto 60px;
