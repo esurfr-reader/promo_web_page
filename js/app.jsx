@@ -457,37 +457,18 @@ function ReviewDemo() {
   }, [ratings]);
   const filledRamp = Math.round(avg);
 
+  const alt = tPath("review.demo.session_title", "Whale Beach - Right-hand point") +
+              ' — Surf Reader post-surf review';
   return (
-    <div className="review-card">
-      <h4>{tPath("review.demo.session_title", "Whale Beach - Right-hand point")}</h4>
-      <div className="session-meta">{tPath("review.demo.session_meta", "")}</div>
-
-      {criteria.map((c,i)=>(
-        <div key={c} className="criterion">
-          <div className="label">{c}</div>
-          <div className="stars" role="radiogroup" aria-label={c}>
-            {[1,2,3,4,5,6,7,8,9,10].map(s=>(
-              <Star key={s}
-                on={s <= ratings[i]}
-                onClick={()=>{
-                  const cp = ratings.slice(); cp[i]=s; setRatings(cp);
-                }} />
-            ))}
-          </div>
-        </div>
-      ))}
-
-      <div className="summary">
-        <div className="left">
-          <div className="small">{tPath("review.demo.skill_rating", "Skill Rating")}</div>
-          <div className="big">{avg.toFixed(1)} <span style={{color:'#F08A2A',fontSize:'.6em'}}>/10</span></div>
-        </div>
-        <div className="ramp" aria-hidden="true">
-          {[1,2,3,4,5,6,7,8,9,10].map(i => <span key={i} className={i<=filledRamp?'on':''}/>)}
+    <div className="hero-visual hero-visual--review" aria-hidden="false">
+      <div className="phone">
+        <div className="phone-screen">
+          <img src="assets/post_surf_review.png"
+               alt={alt}
+               data-img-role="review-app-screenshot"
+               style={{width:'100%',height:'100%',objectFit:'cover',display:'block',background:'#000'}}/>
         </div>
       </div>
-
-      <div style={{marginTop:14,fontSize:12.5,color:'#5b6e85'}}>{tPath("review.demo.tip", "")}</div>
     </div>
   );
 }

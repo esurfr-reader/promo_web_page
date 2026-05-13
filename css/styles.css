@@ -351,6 +351,12 @@ button { font-family: inherit; }
   width: 100%;
   margin: 0 auto;
 }
+.hero-visual--review {
+  aspect-ratio: 1206 / 2376;
+  max-width: 380px;
+  transform: none;
+}
+.hero-visual--review .phone { transform: rotate(2deg); }
 .phone {
   position: absolute; inset: 0;
   background: #000;
