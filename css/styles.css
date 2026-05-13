@@ -94,7 +94,8 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--sans);
   color: var(--ink);
-  background: url('../assets/seamless_sand.png?v=2') repeat;
+  /* background: url('../assets/seamless_sand.png?v=2') repeat; */
+  background: var(--paper);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   line-height: 1.55;
