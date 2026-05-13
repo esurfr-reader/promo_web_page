@@ -272,6 +272,8 @@ function CanvasDemo() {
         <div className="left">
           <h4>{sessionTitle} · {findBreakLabel(breakId)}</h4>
           <span className="pill">{formatStr(iconCountTpl, {n: placed.length, m: strokes.length})}</span>
+        </div>
+        <div className="right">
           {BREAK_IDS.map(id => (
             <button key={id}
               onClick={()=>setBreakId(id)}
@@ -280,9 +282,7 @@ function CanvasDemo() {
               {tPath(`canvas.demo.break_short.${id}`, findBreakLabel(id).split(' ')[0])}
             </button>
           ))}
-        </div>
-        <div className="right">
-          <button type="button" id="canvasExpandBtnInline" className="canvas-expand-btn canvas-expand-btn--inline"
+          <button type="button" id="canvasExpandBtnInline" className="canvas-expand-btn"
                   aria-label="Expand canvas to fullscreen landscape">
             <span data-i18n="canvas.expand">{tPath("canvas.expand", "Expand")}</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"

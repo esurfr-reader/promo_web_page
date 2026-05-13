@@ -554,9 +554,8 @@ section { position: relative; }
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(255, 122, 18, .35);
 }
-.canvas-expand-btn--inline { margin-left: auto; }
-/* Wrap break-short buttons under title on narrow widths. */
-.canvas-meta .left { flex-wrap: wrap; row-gap: 8px; }
+/* Wrap break-short + expand buttons on narrow widths. */
+.canvas-meta .right { flex-wrap: wrap; row-gap: 8px; justify-content: flex-end; }
 .canvas-rotate-hint {
   display: inline-flex;
   align-items: center;
